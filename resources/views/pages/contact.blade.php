@@ -45,6 +45,21 @@
         <div class="absolute top-0 right-0 w-64 h-64 bg-red-600 opacity-20 -mr-20 -mt-20 rounded-full z-0"></div>
     </header>
 
+    
+@if(session()->has('success'))
+    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+        <strong class="font-bold">Succès !</strong>
+        <span class="block sm:inline">{{ session('success') }}</span>
+    </div>
+@endif
+
+@if(session()->has('error'))
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+        <strong class="font-bold">Erreur !</strong>
+        <span class="block sm:inline">{{ session('error') }}</span>
+    </div>
+@endif
+
     <section class="py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16">
@@ -113,15 +128,15 @@
 
                 <div class="bg-gray-50 p-8 md:p-12 shadow-sm border-t-4 border-black">
                     <h2 class="text-2xl font-bold mb-8 uppercase tracking-tight">Envoyez-nous un message</h2>
-                    <form action="{{ route('contact.send') }}" method="POST" class="space-y-6">
+                    <form action="{{ route('contact.send') }}" method="post" class="space-y-6">
                         @csrf
                         <div>
                             <label class="block text-sm font-bold uppercase mb-2">Nom Complet</label>
-                            <input type="text" name="name" placeholder="Ex: Jean Mukendi" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
+                            <input type="text" name="nom" placeholder="Ex: Jean Mukendi" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
                         </div>
                         <div>
                             <label class="block text-sm font-bold uppercase mb-2">Telephone</label>
-                            <input type="tel" name="telephone" placeholder="+2430000000000" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
+                            <input type="tel" name="tel" placeholder="+2430000000000" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
                         </div>
                         <div>
                             <label class="block text-sm font-bold uppercase mb-2">Email</label>
@@ -129,7 +144,7 @@
                         </div>
                         <div>
                             <label class="block text-sm font-bold uppercase mb-2">Type de service souhaité</label>
-                            <select name="service" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
+                            <select name="objet" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
                                 <option value="">Sélectionnez un service</option>
                                 <option value="Hygiene-Entretien">Hygiene et Entretien</option>
                                 <option value="Lutte Antiparasitaire">Lutte Antiparasitaire</option>
