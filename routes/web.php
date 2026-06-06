@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\File;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
 
@@ -48,14 +49,10 @@ Route::get('/contact', function () {
         return view('pages.contact1');
     }
     return view('pages.contact');
-
+ 
 })->name('contact');
 
-Route::post('/contact/send', [
-
-    ContactController::class, 'send'
-
-])->name('contact.send');
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
     
 Route::get('/fr', function () {
 
