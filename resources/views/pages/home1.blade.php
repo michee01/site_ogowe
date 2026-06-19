@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Accueil - Ogowe')
+@section('title', 'Home - Ogowe')
 
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -15,37 +15,37 @@
                 <!-- Slide 1 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-100 slide">
                     <img src="{{ asset('images/assets/lutte2.jpeg') }}" loading="lazy" class="object-cover w-full h-full" alt="Équipe sur le terrain">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div> 
+                    <div class="absolute inset-0 bg-black/40"></div> 
                 </div>
                 
                 <!-- Slide 2 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img src="{{ asset('images/assets/nettoyage7.jpeg') }}" loading="lazy" class="object-cover w-full h-full" alt="Nettoyage industriel">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
                 </div>
                 
                 <!-- Slide 3 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img src="{{ asset('images/assets/resto6.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Lutte antiparasitaire">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
                 </div>
                 
                 <!-- Slide 4 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img src="{{ asset('images/assets/log1.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Catering et restauration">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
                 </div>
 
                 <!-- Slide 5 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img src="{{ asset('images/assets/nettoyage2.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Approvisionnement">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
                 </div>
 
                 <!-- Slide 6 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img src="{{ asset('images/assets/log7.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Locaux professionnels">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
                 .zoom-in { animation: zoomInFade 1.5s ease forwards; }
             </style>
 
-            <h1 class="font-poppins text-6xl md:text-6xl text-white max-w-xl mb-6 leading-tight zoom-in">
+            <h1 class="font-poppins text-6xl md:text-6xl text-white max-w-2xl mb-6 leading-tight zoom-in">
                 Hygiene, Health, and Integrated Solutions for Your Teams
             </h1>
 
@@ -199,9 +199,9 @@
 
                 <div class="bg-black text-white p-8 rounded-br-3xl shadow-2xl">
                     <h3 class="text-red-600 font-bold uppercase tracking-widest mb-4">Our Mission</h3>
-                    <p class="text-xl italic font-light text-justify  scroll-animate">
-                        "To create a clean, healthy, and pest-free environment while 
-                        delivering integrated food distribution and solutions."
+                    <p class="text-lg italic font-light text-justify  scroll-animate">
+                        Contribute to a healthy and protected environment, free from pests, in order to strengthen 
+                        public health and collective well-being.
                     </p>
                 </div>
             </div>
@@ -216,7 +216,7 @@
                             <img src="{{ asset('images/assets/hygiene.jpeg') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg uppercase tracking-tight">Hygiene & Maintenance</p>
-                                <p class="text-xs text-gray-300 font-medium mt-1">Office and Residential Sanitation.</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
                         </div>
 
@@ -224,7 +224,7 @@
                             <img src="{{ asset('images/assets/lutte1.jpeg') }}" alt="Lutte Antiparasitaire" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg uppercase tracking-tight">Health & Safety</p>
-                                <p class="text-xs text-gray-300 font-medium mt-1">Radical Pest Eradication.</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
                         </div>         
 
@@ -232,7 +232,7 @@
                             <img src="{{ asset('images/assets/log1.jpg') }}" alt="Équipe Ogowe" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg uppercase tracking-tight">Food Distribution & Integrated Solutions</p>
-                                <p class="text-xs text-gray-300 font-medium mt-1">Catering Management & Food Supply Support.</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
                         </div>
 
@@ -321,7 +321,8 @@
                     <div class="text-5xl mb-4">🧹</div>
                     <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Corporate Hygiene & Maintenance</h4>
                     <p class="text-gray-700 text-md leading-relaxed mb-6 text-justify">
-                        We ensure the cleanliness and upkeep of professional spaces, guaranteeing an impeccable environment that reflects our clients' image and corporate excellence.
+                        We provide comprehensive cleaning and maintenance solutions for professional spaces, ensuring a flawless 
+                        environment that reflects our clients’ brand image and commitment to excellence.
                     </p>
                     <a href="services.html#hygiene-entretien" class="text-green-600 font-bold hover:underline">Learn More →</a>
                 </div>
@@ -331,8 +332,8 @@
                     <div class="text-5xl mb-4">🛡️</div>
                     <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Environmental Health & Safety</h4>
                     <p class="text-gray-700 text-md leading-relaxed mb-6 text-justify">
-                        Through our pest control solutions (disinsectization, fumigation, rodent control), sanitary inspections, and sustainable prevention, 
-                        we protect your teams and infrastructure from health risks.
+                        We keep your workplace safe and healthy by controlling pests (insects, rodents), carrying out hygiene checks, 
+                        and using sustainable prevention methods to protect your people and facilities from health risks.
                     </p>
                     <a href="services.html#sante-securite" class="text-green-600 font-bold hover:underline">Learn More →</a>
                 </div>
@@ -421,23 +422,22 @@
         <div class="container mx-auto px-6">
             <!-- Carrousel logos -->
             <div class="bg-gray-50 rounded-3xl p-5 md:p-16">
-            <h4 class="text-center text-red-600 text-2xl font-black uppercase tracking-[0.2em] mb-12">
-                Our Clients
-            </h4>
+                <h4 class="text-center text-red-600 text-2xl font-black uppercase tracking-[0.2em] mb-12">
+                    Our Clients
+                </h4>
 
-            <!-- Marquee container -->
-            <div class="overflow-hidden relative">
-                <div class="flex animate-marquee space-x-16">
-                    <img src="images/logo/logo-plurielles.JPG" alt="Logo plurielles" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-bank.png" alt="Logo CRDB Bank" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-diamant.JPG" alt="Logo Centre medical diamant" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-jeanne.JPG" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-kamao.JPG" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-kico.JPG" alt="Logo Kico S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-luano.JPG" alt="Logo Luano City" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                <!-- Marquee container -->
+                <div class="overflow-hidden relative">
+                    <div class="flex animate-marquee space-x-16">
+                        <img src="{{asset('images/logo/logo-plurielles.JPG')}}" alt="Logo plurielles" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-bank.png')}}" alt="Logo CRDB Bank" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-diamant.JPG')}}" alt="Logo Centre medical diamant" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-ecobank.png')}}" alt="Logo Ecobank" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-jeanne.png')}}" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-kico.png')}}" alt="Logo kico SA" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-kamao.JPG')}}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                    </div>
                 </div>
-            </div>
-
             </div>
         </div>
     </section>
@@ -479,7 +479,7 @@
                         Get a Free Quote
                     </a>
                     <a href="https://wa.me/243977976226" class="w-full rounded-lg sm:w-auto flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-black font-black uppercase tracking-widest px-8 py-5 transition-all duration-300 text-center">
-                    <span class="text-xl">💬</span> Contact
+                        <span class="text-xl">💬</span> Contact
                     </a>
                 </div>
             </div>
@@ -493,9 +493,9 @@
 
             <!-- Barre de réassurance -->
             <div class="mt-12 flex items-center justify-center md:justify-start gap-8 opacity-40">
-            <span class="text-white text-[10px] font-bold uppercase tracking-[0.2em]">24-Hour Response Time</span>
-            <span class="text-white text-[10px] font-bold uppercase tracking-[0.2em]">Katanga Coverage</span>
-            <span class="text-white text-[10px] font-bold uppercase tracking-[0.2em]">Certified Solutions</span>
+                <span class="text-white text-[10px] font-bold uppercase tracking-[0.2em]">24-Hour Response Time</span>
+                <span class="text-white text-[10px] font-bold uppercase tracking-[0.2em]">Katanga Coverage</span>
+                <span class="text-white text-[10px] font-bold uppercase tracking-[0.2em]">Certified Solutions</span>
             </div>
         </div>
     </section>

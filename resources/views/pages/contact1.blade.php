@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Services - Ogowe')
+@section('title', 'Contact - Ogowe')
 
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -30,7 +30,7 @@
     <header class="relative bg-black text-white py-20 overflow-hidden">
         <!-- Image de fond -->
         <div class="absolute inset-0">
-            <img src="{{ asset('images/logo/logo-ogowe.jpeg') }}" alt="Fond header" class="w-full h-full object-cover opacity-60">
+            <img src="{{ asset('images/logo/logo-ogowe1.png') }}" alt="Fond header" class="w-full h-full object-cover opacity-60">
             <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
         </div>
 

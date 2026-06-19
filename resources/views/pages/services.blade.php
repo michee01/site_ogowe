@@ -8,7 +8,7 @@
     <header class="relative bg-black text-white py-20 overflow-hidden">
         <!-- Image de fond -->
         <div class="absolute inset-0">
-            <img src="images/logo/logo-ogowe.jpeg" alt="Fond header" class="w-full h-full object-cover opacity-60">
+            <img src="images/logo/logo-ogowe1.png" alt="Fond header" class="w-full h-full object-cover opacity-60">
             <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
         </div>
 

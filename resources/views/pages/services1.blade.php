@@ -8,7 +8,7 @@
     <header class="relative bg-black text-white py-20 overflow-hidden">
         <!-- Image de fond -->
         <div class="absolute inset-0">
-            <img src="images/logo/logo-ogowe.jpeg" alt="Fond header" class="w-full h-full object-cover opacity-60">
+            <img src="images/logo/logo-ogowe1.png" alt="Fond header" class="w-full h-full object-cover opacity-60">
             <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
         </div>
 
@@ -35,8 +35,8 @@
                 <div class="md:w-1/2">
                     <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Corporate Hygiene & Maintenance</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
-                        We ensure the cleanliness and upkeep of professional spaces, guaranteeing an 
-                        impeccable environment that reflects our clients' image and corporate excellence.
+                        We provide comprehensive cleaning and maintenance solutions for professional spaces, ensuring a 
+                        flawless environment that reflects our clients’ brand image and commitment to excellence.
                     </p>                    
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
@@ -61,7 +61,7 @@
                     
                 </div>
                 <div class="md:w-1/2 bg-gray-200 h-85 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
-                    <img src="{{ asset('images/assets/hygiene.jpeg') }}" alt="service hygiène et entretien"  loading="lazy" srcset="" class="w-full h-85">
+                    <img src="{{asset('images/assets/hygiene.jpeg') }}" alt="service hygiène et entretien"  loading="lazy" srcset="" class="w-full h-85">
                 </div>
             </div>
         </div>
@@ -75,8 +75,8 @@
                 <div class="md:w-1/2">
                     <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Environmental Health & Safety</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
-                        Through our pest control solutions (disinsectization, fumigation, rodent control), sanitary auditing, 
-                        and sustainable prevention, we protect your teams and infrastructure against health risks.
+                        We keep your workplace safe and healthy by controlling pests (insects, rodents), carrying out hygiene checks, 
+                        and using sustainable prevention methods to protect your people and facilities from health risks.
                     </p>
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
@@ -98,7 +98,7 @@
                     </ul>
                 </div>
                 <div class="md:w-1/2 bg-white border border-gray-200 h-85 rounded-lg shadow-xl flex items-center justify-center text-gray-300 font-bold italic">
-                    <img src="{{ asset('images/assets/lutte1.jpeg') }}" alt="service antiparasitaire" loading="lazy" srcset="" class="w-full h-85">
+                    <img src="{{asset('images/assets/lutte1.jpeg') }}" alt="service antiparasitaire" loading="lazy" srcset="" class="w-full h-85">
                 </div>
             </div>
         </div>
@@ -118,11 +118,11 @@
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
                             <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
-                            <span class="text-md">Catering Managemen</span>
+                            <span class="text-md">Food Industry</span>
                         </li>
                         <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
                             <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
-                            <span class="text-md">Agri-food Distribution</span>
+                            <span class="text-md">Canteen Management</span>
                         </li>
                     </ul>
                 </div>

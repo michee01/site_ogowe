@@ -15,37 +15,37 @@
                 <!-- Slide 1 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-100 slide">
                     <img src="{{ asset('images/assets/lutte2.jpeg') }}"  loading="lazy" class="object-cover w-full h-full" alt="Équipe sur le terrain">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div> 
+                    <div class="absolute inset-0 bg-black/40"></div> 
                 </div>
                 
                 <!-- Slide 2 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img src="{{ asset('images/assets/nettoyage7.jpeg') }}" loading="lazy" class="object-cover w-full h-full" alt="Nettoyage industriel">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
                 </div>
                 
                 <!-- Slide 3 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img src="{{ asset('images/assets/resto6.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Lutte antiparasitaire">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
                 </div>
                 
                 <!-- Slide 4 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img src="{{ asset('images/assets/log1.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Catering et restauration">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
                 </div>
 
                 <!-- Slide 5 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img src="{{ asset('images/assets/nettoyage2.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Approvisionnement">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
                 </div>
 
                 <!-- Slide 6 -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img src="{{ asset('images/assets/log7.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Locaux professionnels">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
                 .zoom-in { animation: zoomInFade 1.5s ease forwards; }
             </style>
 
-            <h1 class="font-poppins text-6xl md:text-6xl text-white max-w-xl mb-6 leading-tight zoom-in">
+            <h1 class="font-poppins text-6xl md:text-6xl text-white max-w-2xl mb-6 leading-tight zoom-in">
                 Hygiène, santé et solutions intégrée pour vos equipes
             </h1>
 
@@ -199,9 +199,9 @@
 
                 <div class="bg-black text-white p-8 rounded-br-3xl shadow-2xl">
                     <h3 class="text-red-600 font-bold uppercase tracking-widest mb-4">Notre Mission</h3>
-                    <p class="text-xl italic font-light text-justify  scroll-animate">
-                        "Créer un environnement propre, sain et sans nuisibles et assurer un service de distribution 
-                        et solutions alimentaires intégrées"
+                    <p class="text-lg italic font-light text-justify  scroll-animate">
+                        Contribuer à un environnement sain et protégé, sans nuisibles, afin de renforcer la santé publique 
+                        et le bien-être collectif.
                     </p>
                 </div>
             </div>
@@ -216,7 +216,7 @@
                             <img src="{{ asset('images/assets/hygiene.jpeg') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg uppercase tracking-tight">Hygiène et Entrerien</p>
-                                <p class="text-xs text-gray-300 font-medium mt-1">Assainissement des bureaux et residance.</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
                         </div>
 
@@ -224,7 +224,7 @@
                             <img src="{{ asset('images/assets/lutte1.jpeg') }}" alt="Lutte Antiparasitaire" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg uppercase tracking-tight">Santé et securité</p>
-                                <p class="text-xs text-gray-300 font-medium mt-1">Élimination radicale des nuisibles.</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
                         </div>         
 
@@ -232,7 +232,7 @@
                             <img src="{{ asset('images/assets/log1.jpg') }}" alt="Équipe Ogowe" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg uppercase tracking-tight">Distribution et solutions alimentaires intégrées</p>
-                                <p class="text-xs text-gray-300 font-medium mt-1">Gestion de cantines et soutien alimentaire.</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
                         </div>
 
@@ -343,7 +343,7 @@
                     <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Distribution et solutions alimentaires intégrées</h4>
                     <p class="text-gray-700 text-md leading-relaxed mb-6 text-justify">
                         Nous développons des solutions fiables et innovantes pour l’approvisionnement et la distribution alimentaire, afin de garantir qualité, 
-                        continuité et efficacité dans la gestion des besoins des entreprises et institutions.
+                        continuité et efficacité.
                     </p>
                     <a href="services.html#distribution" class="text-green-600 font-bold hover:underline">En savoir plus →</a>
                 </div>
@@ -420,22 +420,22 @@
         <div class="container mx-auto px-6">
             <!-- Carrousel logos -->
             <div class="bg-gray-50 rounded-3xl p-5 md:p-16">
-            <h4 class="text-center text-red-600 text-2xl font-black uppercase tracking-[0.2em] mb-12">
-                Ils nous font confiance
-            </h4>
+                <h4 class="text-center text-red-600 text-2xl font-black uppercase tracking-[0.2em] mb-12">
+                    Ils nous font confiance
+                </h4>
 
-            <!-- Marquee container -->
-            <div class="overflow-hidden relative">
-                <div class="flex animate-marquee space-x-16">
-                    <img src="images/logo/logo-plurielles.JPG" alt="Logo plurielles" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-bank.png" alt="Logo CRDB Bank" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-diamant.JPG" alt="Logo Centre medical diamant" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-jeanne.JPG" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-kamao.JPG" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-kico.JPG" alt="Logo Kico S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                    <img src="images/logo/logo-luano.JPG" alt="Logo Luano City" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                <!-- Marquee container -->
+                <div class="overflow-hidden relative">
+                    <div class="flex animate-marquee space-x-16">
+                        <img src="{{asset('images/logo/logo-plurielles.JPG')}}" alt="Logo plurielles" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-bank.png')}}" alt="Logo CRDB Bank" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-diamant.JPG')}}" alt="Logo Centre medical diamant" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-ecobank.png')}}" alt="Logo Ecobank" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-jeanne.png')}}" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-kico.png')}}" alt="Logo kico SA" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-kamao.JPG')}}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                    </div>
                 </div>
-            </div>
 
             </div>
         </div>
