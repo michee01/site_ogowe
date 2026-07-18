@@ -53,7 +53,7 @@
                             <div>
                                 <h4 class="font-bold text-lg uppercase">Nettoyage Industriel & Commercial</h4>
                                 <p class="text-md text-gray-800">
-                                    Entretien complet de bureaux, entrepôts et sites industriels complexes.
+                                    Entretien complet des bureaux, entrepôts et sites industriels complexes.
                                 </p>
                             </div>
                         </div>

@@ -61,7 +61,7 @@
             </style>
 
             <h1 class="font-poppins text-6xl md:text-6xl text-white max-w-2xl mb-6 leading-tight zoom-in">
-                Hygiène, santé et solutions intégrée pour vos equipes
+                Hygiène, santé et solutions intégrées pour vos equipes
             </h1>
 
             <p class="text-lg md:text-xl text-white max-w-2xl mb-10 p-2 opacity-100 zoom-in">
@@ -392,7 +392,7 @@
                     </div>
                     <h3 class="text-xl font-bold mb-4 uppercase tracking-tight text-red-600 group-hover:text-black">Durabilité</h3>
                     <p class="text-gray-600 leading-relaxed text-md text-justify">
-                        Engagement fort pour l’environnement et l’assainissement, avec des solutions responsables.
+                        Un nettoyage responsable, garantissant un environnement sain grâce à des pratiques respectueuses de l’environnement.
                     </p>
                 </div>
 
@@ -468,7 +468,7 @@
                 Rejoignez les <span class="text-red-600">entreprises</span> du Katanga qui nous font confiance
                 </h4>
                 <p class="text-gray-400 text-lg text-justify">
-                Ogowe accompagne avec des solutions d'hygiène et entretien, de lutte antiparasitaire, de distribution et solutions alimentaire intégrées.
+                    Ogowe propose des solutions de nettoyage, d'hygiène et entretien, de lutte antiparasitaire, de distribution et solutions alimentaire intégrées.
                 </p>
             </div>
 
