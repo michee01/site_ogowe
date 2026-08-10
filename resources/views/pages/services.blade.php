@@ -8,7 +8,7 @@
     <header class="relative bg-black text-white py-20 overflow-hidden">
         <!-- Image de fond -->
         <div class="absolute inset-0">
-            <img src="images/logo/logo-ogowe1.png" alt="Fond header" class="w-full h-full object-cover opacity-60">
+            <img src="images/logo/logo-ogowe1.png" alt="Fond header" loading="lazy" class="w-full h-full object-cover opacity-60">
             <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
         </div>
 
@@ -28,12 +28,48 @@
 
     <!-------------------------------------------------------------------------------------------------------->
 
+    <!--Distribution et solutions alimentaires intégrées-->
+    <div id="distribution" class="w-full h-14 "> </div>
+    <section class="py-15 bg-gray-50 ">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Logistique et distribution</h2>
+                    <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
+                        De Dar es Salaam au cœur du Haut-Katanga et du Lualaba, nous prenons en charge toutes vos formalites de  transit et transport afin de vous livrer vos marchandises avec tracabilite et securite dans le respect des delai.   
+                        Grâce à cette expertise, nous assurons une continuité fluide et innovante qui se conclut par une distribution  des consumables : carburant et produits  agro-alimentaire secs.
+
+                    </p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <li class="flex items-center space-x-3 bg-gray-100 p-2 rounded">
+                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
+                            <span class="text-md">Transit Dar es salaam - Transport</span>
+                        </li>
+                        <li class="flex items-center space-x-3 bg-gray-100 p-2 rounded">
+                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
+                            <span class="text-md">FERI /COD</span>
+                        </li>
+                        <li class="flex items-center space-x-3 bg-gray-100 p-2 rounded">
+                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
+                            <span class="text-md">Distribution : Carburant et produits  agro aliementaires secs.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 bg-gray-200 h-85 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
+                    <img src="{{ asset('images/assets/log1.jpg') }}" alt="service logistique" loading="lazy" srcset="" class="w-full h-85">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------------------------------------------------------->
+
     <!--Hygiene et entretien-->
+    <div id="hygiene-entretien" class="w-full h-14"> </div>
     <section id="hygiene-entretien" class="py-20 border-b border-gray-100">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row gap-12 items-center">
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Hygiène et entretien des entreprises</h2>
+                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Hygiène et entretien</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
                         Nous assurons la propreté et l’entretien des espaces professionnels, en garantissant 
                         un environnement impeccable qui reflète l’image et l’excellence de nos clients.
@@ -61,7 +97,7 @@
                     
                 </div>
                 <div class="md:w-1/2 bg-gray-200 h-85 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
-                    <img src="{{ asset('images/assets/hygiene.jpeg') }}" alt="service hygiène et entretien"  loading="lazy" srcset="" class="w-full h-85">
+                    <img src="{{ asset('images/assets/hygiene.jpeg') }}" alt="service hygiène et entretien" loading="lazy" srcset="" class="w-full h-85">
                 </div>
             </div>
         </div>
@@ -69,11 +105,12 @@
     <!-------------------------------------------------------------------------------------------------------->
 
     <!--Sante et securite-->
+    <div id="sante-securite" class="w-full h-14 "> </div>
     <section id="sante-securite" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Santé et sécurité environnementale</h2>
+                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Pest control et prévention</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
                         Grâce à nos solutions de lutte antiparasitaire (désinsectisation, fumigation, dératisation), au contrôle sanitaire 
                         et à la prévention durable, nous protégeons vos équipes et vos infrastructures contre les risques sanitaires.
@@ -105,38 +142,9 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Distribution et solutions alimentaires intégrées-->
-    <section id="distribution" class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Distribution et solutions alimentaires intégrées</h2>
-                    <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
-                        Nous développons des solutions fiables et innovantes pour l’approvisionnement et la distribution alimentaire, 
-                        afin de garantir qualité, continuité et efficacité dans la gestion des besoins des entreprises et institutions.
-                    </p>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
-                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
-                            <span class="text-md">Gestion de cantines</span>
-                        </li>
-                        <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
-                            <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
-                            <span class="text-md">Distribution agro-alimentaire</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="md:w-1/2 bg-gray-200 h-85 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
-                    <img src="{{ asset('images/assets/log1.jpg') }}" alt="service logistique" loading="lazy" srcset="" class="w-full h-85">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-------------------------------------------------------------------------------------------------------->
-
     <!--Appel a l'action-->
-    <section class="mx-auto px-6 mb-5">        
-            <div class="pt-10 mt-5 flex flex-col md:flex-row items-center justify-between bg-gray-200 p-8 rounded-2xl">
+    <section class="mx-auto px-6 mb-15">        
+            <div class="pt-10 px-20 mt-15 flex flex-col md:flex-row items-center justify-between bg-gray-200 p-8 rounded-2xl">
                 <div class="flex items-center gap-4 mb-6 md:mb-0">
                     <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center animate-pulse">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,7 +152,7 @@
                         </svg>
                     </div>
                     <p class="text-xl font-bold text-black uppercase tracking-tight">
-                        Vous avez besoin d'un devis personnalisé ?
+                        AVEZ-VOUS BESOIN D’UN DEVIS  ?
                     </p>
                 </div>
                 
