@@ -8,15 +8,11 @@ use App\Http\Controllers\ContactController;
 Route::get('/', function () {
 
     if (!Session::has('lang')) {
-
         Session::put('lang', "fr");
     }
-
     if (session('lang') == 'en'){
-
         return view('pages.home1');
     }
-
     return view('pages.home');
     
 })->name('home');
@@ -24,15 +20,11 @@ Route::get('/', function () {
 Route::get('/services', function () {
 
     if (!Session::has('lang')) {
-
         Session::put('lang', "fr");
     }
-
     if (session('lang') == 'en'){
-
         return view('pages.services1');
     }
-
     return view('pages.services');
 
 })->name('services');

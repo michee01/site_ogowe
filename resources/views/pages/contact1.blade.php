@@ -30,7 +30,7 @@
     <header class="relative bg-black text-white py-20 overflow-hidden">
         <!-- Image de fond -->
         <div class="absolute inset-0">
-            <img src="{{ asset('images/logo/logo-ogowe1.png') }}" alt="Fond header" class="w-full h-full object-cover opacity-60">
+            <img src="{{ asset('images/logo/logo-ogowe1.png') }}" alt="Fond header" loading="lazy" class="w-full h-full object-cover opacity-60">
             <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
         </div>
 
@@ -38,7 +38,7 @@
         <div class="container mx-auto px-6 relative z-10">
             <h1 class="text-4xl md:text-5xl font-black uppercase mb-4">Contact us</h1>
             <p class="text-xl text-gray-200 max-w-2xl text-justify">
-                Ready to clean up your environment? Our team is at your disposal for a quote or an intervention.
+                Contact us for all your transit and transportation needs from Dar es Salaam, as well as for the sanitation and maintenance of your premises.
             </p>
         </div>
 
@@ -147,10 +147,10 @@
                             <label class="block text-sm font-bold uppercase mb-2">Service Type</label>
                             <select name="objet" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
                                 <option value="">Select a service</option>
-                                <option value="Hygiene-Entretien">Hygiene & Maintenance</option>
-                                <option value="Lutte Antiparasitaire">Pest Control</option>
-                                <option value="Gestion de cantines">Catering Management</option>
-                                <option value="Distribution">Distribution</option>
+                                <option value="Hygiene-Entretien">Logistics & Distribution</option>
+                                <option value="Lutte Antiparasitaire">Hygiene & Maintenance</option>
+                                <option value="Gestion de cantines">Pest Control & Prevention</option>
+                                <option value="Distribution">Others</option>
                             </select>
                         </div>
                         <div>

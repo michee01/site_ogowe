@@ -29,7 +29,7 @@
     <header class="relative bg-black text-white py-20 overflow-hidden">
         <!-- Image de fond -->
         <div class="absolute inset-0">
-            <img src="{{ asset('images/logo/logo-ogowe1.png') }}" alt="Fond header" class="w-full h-full object-cover opacity-60">
+            <img src="{{ asset('images/logo/logo-ogowe1.png') }}" alt="Fond header" loading="lazy" class="w-full h-full object-cover opacity-60">
             <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
         </div>
 
@@ -37,7 +37,7 @@
         <div class="container mx-auto px-6 relative z-10">
             <h1 class="text-4xl md:text-5xl font-black uppercase mb-4">Contactez-nous</h1>
             <p class="text-xl text-gray-200 max-w-2xl text-justify">
-                Prêt à assainir votre environnement ? Notre équipe est à votre disposition pour un devis ou une intervention.
+                Contactez nous pour tous vos besoins de Transit et transport  a  partir de Dar es salam ainsi qu’a l’assainissement de vos environnments.
             </p>
         </div>
 
@@ -146,10 +146,10 @@
                             <label class="block text-sm font-bold uppercase mb-2">Type de service souhaité</label>
                             <select name="objet" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
                                 <option value="">Sélectionnez un service</option>
+                                <option value="Lutte Antiparasitaire">Logistique et distribution</option>
                                 <option value="Hygiene-Entretien">Hygiene et Entretien</option>
-                                <option value="Lutte Antiparasitaire">Lutte Antiparasitaire</option>
-                                <option value="Gestion de cantines">Gestion de cantines</option>
-                                <option value="Distribution">Distribution</option>
+                                <option value="Gestion de cantines">Pest control et prévention</option>
+                                <option value="Distribution">Autres</option>
                             </select>
                         </div>
                         <div>
