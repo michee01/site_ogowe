@@ -70,7 +70,7 @@
 
             <!-- CTA hiérarchisés -->
             <div class="flex flex-col md:flex-row gap-4">
-                <a href="contact.html" 
+                <a href="{{route('contact')}}" 
                     class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded font-bold uppercase transition transform hover:-translate-y-1 shadow-xl">
                     Demander un devis  
                 </a>
@@ -175,9 +175,9 @@
                     <span class="w-8 h-px bg-red-600 mr-4"></span>
                     Ogowe
                 </h2>
-                <p class="text-lg text-gray-800 leading-relaxed mb-6 text-justify  scroll-animate">
-                    Basée à Lubumbashi, <span class="font-bold ">Ogowe</span> est votre partenaire de confiance pour un environnement sain, sécurisé et performant. <br>
-                    Chez Ogowe, nous croyons qu’un cadre de travail propre, sûr et bien approvisionné est la clé de la productivité et du bien-être.                 
+                <p class="text-lg text-gray-800 leading-relaxed mb-6 text-justify  scroll-animate">               
+                    Chez Ogowe, nous sommes votre partenaire de confiance pour la logistique et distribution ainsi que pour la gestion sanitaire et environnementale. 
+                    Notre mission est d’assurer la fluidité de vos opérations et de protéger vos équipes et infrastructures, tout en reflétant l’excellence de votre image.
                 </p>
 
                 <script>
@@ -200,8 +200,8 @@
                 <div class="bg-black text-white p-8 rounded-br-3xl shadow-2xl">
                     <h3 class="text-red-600 font-bold uppercase tracking-widest mb-4">Notre Mission</h3>
                     <p class="text-lg italic font-light text-justify  scroll-animate">
-                        Contribuer à un environnement sain et protégé, sans nuisibles, afin de renforcer la santé publique 
-                        et le bien-être collectif.
+                        La mission d’Ogowe est d’assurer la fluidité logistique et la sécurité sanitaire de ses clients, 
+                        en offrant des solutions intégrées  innovantes qui allient performance, fiabilité et durabilité.
                     </p>
                 </div>
             </div>
@@ -317,41 +317,56 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Carte 1 -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate">
-                    <div class="text-5xl mb-4">🧹</div>
-                    <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Hygiène et entretien des entreprises</h4>
-                    <p class="text-gray-700 text-md leading-relaxed mb-6 text-justify">
-                        Nous assurons la propreté et l’entretien des espaces professionnels, en garantissant un environnement impeccable qui reflète l’image et l’excellence de nos clients.
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
+                    <div class="text-5xl mb-4">🚚</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Logistique & distribution</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6 text-justify">
+                        De Dar es Salaam au cœur du Haut-Katanga et du Lualaba, nous prenons en charge : <br>
+                        •	Transit Dar es Salaam : formalités de transit et transport. <br>
+                        •	Transport et FERI/COD : traçabilité et sécurité garanties. <br>
+                        •	Distribution : carburant et produits agro-alimentaires secs, livrés dans le respect des délais.
                     </p>
-                    <a href="services.html#hygiene-entretien" class="text-green-600 font-bold hover:underline">En savoir plus →</a>
+                    <a href="{{route('services')}}#distribution" 
+                        class="mt-auto text-green-600 font-bold hover:underline">
+                        En savoir plus →
+                    </a>
                 </div>
 
                 <!-- Carte 2 -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate">
-                    <div class="text-5xl mb-4">🛡️</div>
-                    <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Santé et sécurité environnementale</h4>
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
+                    <div class="text-5xl mb-4">🧹</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Hygiène & entretien</h4>
                     <p class="text-gray-700 text-md leading-relaxed mb-6 text-justify">
-                        Grâce à nos solutions de lutte antiparasitaire (désinsectisation, fumigation, dératisation), au contrôle sanitaire et à la prévention durable, 
-                        nous protégeons vos équipes et vos infrastructures contre les risques sanitaires.
+                        Nous assurons la propreté des espaces professionnels, en garantissant un environnement impeccable qui valorise l’image de nos clients.
                     </p>
-                    <a href="services.html#sante-securite" class="text-green-600 font-bold hover:underline">En savoir plus →</a>
+                    <a href="{{route('services')}}#hygiene-entretien" 
+                        class="mt-auto text-green-600 font-bold hover:underline">
+                        En savoir plus →
+                    </a>
                 </div>
 
                 <!-- Carte 3 -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate">
-                    <div class="text-5xl mb-4">🚚</div>
-                    <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Distribution et solutions alimentaires intégrées</h4>
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
+                    <div class="text-5xl mb-4">🛡️</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">
+                        Pest control & prévention
+                    </h4>
                     <p class="text-gray-700 text-md leading-relaxed mb-6 text-justify">
-                        Nous développons des solutions fiables et innovantes pour l’approvisionnement et la distribution alimentaire, afin de garantir qualité, 
-                        continuité et efficacité.
+                        Grâce à nos solutions de lutte antiparasitaire (désinsectisation, fumigation, dératisation), au contrôle sanitaire et à la prévention durable,
+                        nous protégeons vos équipes et vos infrastructures contre les risques sanitaires.
                     </p>
-                    <a href="services.html#distribution" class="text-green-600 font-bold hover:underline">En savoir plus →</a>
+                    <!-- Bouton -->
+                    <a href="{{route('services')}}#sante-securite"
+                        class="mt-auto text-green-600 font-bold hover:underline">
+                        En savoir plus →
+                    </a>
                 </div>
+
             </div>
 
             <!-- CTA global -->
             <div class="mt-16 text-center">
-                <a href="#contact" class="rounded-xl inline-block border-2 border-black px-6 py-4 font-black uppercase text-md text-white bg-red-600 tracking-widest hover:bg-black hover:text-white transition-all">
+                <a href="{{route('contact')}}" class="rounded-xl inline-block border-2 border-black px-6 py-4 font-black uppercase text-md text-white bg-red-600 tracking-widest hover:bg-black hover:text-white transition-all">
                     Demander un devis personnalisé
                 </a>
             </div>
@@ -359,6 +374,61 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
+    <!-- Engagement -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-black uppercase tracking-tighter inline-block relative">
+                    Nos <span class="text-red-600">engagements</span> 
+                    <span class="absolute -bottom-4 left-0 w-full h-1.5 bg-red-600"></span>
+                </h2>
+                <p class="mt-8 text-gray-800 leading-relaxed text-xl max-w-4xl mx-auto text-center">
+                    Avec Ogowe, vous bénéficiez d’une expertise complète, allant de la logistique internationale à la protection sanitaire locale, pour un environnement sûr et performant.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Fiabilité -->
+                <div class="group bg-white p-10 shadow-sm border-b-4 border-black hover:border-red-600 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
+                        <i class="fa-solid fa-circle-check text-2xl text-black group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight">Fiabilité</h3>
+                    <p class="text-gray-600 leading-relaxed text-md text-justify">
+                        Respect des délais et traçabilité totale.
+                    </p>
+                </div>
+
+                <!-- Sécurité -->
+                <div class="group bg-white p-10 shadow-sm border-b-4 border-red-600 hover:border-black transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-black transition-colors">
+                        <i class="fa-solid fa-shield-halved text-2xl text-black group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight text-red-600 group-hover:text-black">Sécurité</h3>
+                    <p class="text-gray-600 leading-relaxed text-md text-justify">
+                        Protection optimale de vos marchandises et de vos espaces.
+                    </p>
+                </div>
+
+                <!-- Innovation -->
+                <div class="group bg-white p-10 shadow-sm border-b-4 border-black hover:border-red-600 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
+                        <i class="fa-solid fa-lightbulb text-2xl text-black group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight">Innovation</h3>
+                    <p class="text-gray-600 leading-relaxed text-md text-justify">
+                        Solutions modernes et durables pour un impact positif.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Ajoute Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <!-------------------------------------------------------------------------------------------------------->
+    
     <!--Pourquoi nous choisir-->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
@@ -368,47 +438,12 @@
                     Pourquoi choisir <span class="text-red-600">Ogowe</span> ?
                     <span class="absolute -bottom-4 left-0 w-full h-1.5 bg-red-600"></span>
                 </h2>
-                <p class="mt-8 text-gray-800 leading-relaxed text-lg max-w-4xl mx-auto text-center">
-                    Choisir Ogowe, c’est choisir un partenaire unique qui prend soin de vos espaces, de vos équipes et de votre image, en alliant discipline, durabilité et fiabilité totale.
+                <p class="mt-8 text-gray-800 leading-relaxed text-3xl max-w-4xl mx-auto text-center">
+                    Choisir <span class="text-red-600 font-semibold">Ogowe</span> 
+                    c’est opter pour un partenaire unique qui prend soin de vos marchandises, de vos espaces et de votre image.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Impact humain -->
-                <div class="group bg-white p-10 shadow-sm border-b-4 border-black hover:border-red-600 transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-14 h-14 bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
-                        <i class="fa-solid fa-users text-2xl text-black group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight">Impact humain</h3>
-                    <p class="text-gray-600 leading-relaxed text-md text-justify">
-                        Chaque service est pensé pour créer un environnement sain, motivant et productif.
-                    </p>
-                </div>
-
-                <!-- Durabilité -->
-                <div class="group bg-white p-10 shadow-sm border-b-4 border-red-600 hover:border-black transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-14 h-14 bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-black transition-colors">
-                        <i class="fa-solid fa-leaf text-2xl text-black group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight text-red-600 group-hover:text-black">Durabilité</h3>
-                    <p class="text-gray-600 leading-relaxed text-md text-justify">
-                        Un nettoyage responsable, garantissant un environnement sain grâce à des pratiques respectueuses de l’environnement.
-                    </p>
-                </div>
-
-                <!-- Proximité & fiabilité -->
-                <div class="group bg-white p-10 shadow-sm border-b-4 border-black hover:border-red-600 transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-14 h-14 bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
-                        <i class="fa-solid fa-location-dot text-2xl text-black group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight">Proximité & fiabilité</h3>
-                    <p class="text-gray-600 leading-relaxed text-md text-justify">
-                        Une entreprise enracinée localement, mais tournée vers l’excellence régionale.
-                    </p>
-                </div>
-
-
-            </div>
         </div>
     </section>
     <!-- Ajoute Font Awesome -->
@@ -434,6 +469,8 @@
                         <img src="{{asset('images/logo/logo-jeanne.png')}}" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
                         <img src="{{asset('images/logo/logo-kico.png')}}" alt="Logo kico SA" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
                         <img src="{{asset('images/logo/logo-kamao.JPG')}}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-CCT.png')}}" alt="Logo kico SA" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-UAC.jpg')}}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
                     </div>
                 </div>
 
@@ -450,7 +487,7 @@
         .animate-marquee {
             display: flex;
             width: max-content;
-            animation: marquee 30s linear infinite;
+            animation: marquee 15s linear infinite;
         }
     </style>
     <!-------------------------------------------------------------------------------------------------------->
@@ -474,7 +511,7 @@
 
             <!-- Boutons -->
             <div class="flex flex-col sm:flex-row items-center gap-4">
-                <a href="contact.html" class="w-full rounded-lg sm:w-auto bg-green-700 hover:bg-green-600 text-white font-black uppercase tracking-widest px-10 py-5 transition-all duration-300 transform hover:-translate-y-1 shadow-xl text-center">
+                <a href="{{route('contact')}}" class="w-full rounded-lg sm:w-auto bg-green-700 hover:bg-green-600 text-white font-black uppercase tracking-widest px-10 py-5 transition-all duration-300 transform hover:-translate-y-1 shadow-xl text-center">
                 Obtenir un devis gratuit
                 </a>
                 <a href="https://wa.me/243977976226" class="w-full rounded-lg sm:w-auto flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-black font-black uppercase tracking-widest px-8 py-5 transition-all duration-300 text-center">
