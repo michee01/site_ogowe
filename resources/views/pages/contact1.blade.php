@@ -37,7 +37,7 @@
         <!-- Contenu -->
         <div class="container mx-auto px-6 relative z-10">
             <h1 class="text-4xl md:text-5xl font-black uppercase mb-4">Contact us</h1>
-            <p class="text-xl text-gray-200 max-w-2xl text-justify">
+            <p class="text-xl text-gray-200 max-w-xl text-justify">
                 Contact us for all your transit and transportation needs from Dar es Salaam, as well as for the sanitation and maintenance of your premises.
             </p>
         </div>

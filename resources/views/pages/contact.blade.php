@@ -36,7 +36,7 @@
         <!-- Contenu -->
         <div class="container mx-auto px-6 relative z-10">
             <h1 class="text-4xl md:text-5xl font-black uppercase mb-4">Contactez-nous</h1>
-            <p class="text-xl text-gray-200 max-w-2xl text-justify">
+            <p class="text-xl text-gray-200 max-w-xl text-justify">
                 Contactez nous pour tous vos besoins de Transit et transport  a  partir de Dar es salam ainsi qu’a l’assainissement de vos environnments.
             </p>
         </div>
@@ -65,7 +65,7 @@
             <div class="grid md:grid-cols-2 gap-16">
                 
                 <div class="space-y-12">
-                    <div>
+                    <div class="p-4">
                         <h2 class="text-2xl font-bold mb-8 uppercase tracking-tight">Nos Coordonnées</h2>
                         <div class="space-y-6">
                             <div class="flex items-start space-x-4">
