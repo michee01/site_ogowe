@@ -452,7 +452,7 @@
 
     <!--Ils nous font confiance-->
     <section class="py-16 bg-white overflow-hidden">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto px-4">
             <!-- Carrousel logos -->
             <div class="bg-gray-50 rounded-3xl p-5 md:p-16">
                 <h4 class="text-center text-red-600 text-2xl font-black uppercase tracking-[0.2em] mb-12">
@@ -461,16 +461,42 @@
 
                 <!-- Marquee container -->
                 <div class="overflow-hidden relative">
-                    <div class="flex animate-marquee space-x-16">
-                        <img src="{{asset('images/logo/logo-plurielles.JPG')}}" alt="Logo plurielles" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                        <img src="{{asset('images/logo/logo-bank.png')}}" alt="Logo CRDB Bank" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                        <img src="{{asset('images/logo/logo-diamant.JPG')}}" alt="Logo Centre medical diamant" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                        <img src="{{asset('images/logo/logo-ecobank.png')}}" alt="Logo Ecobank" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                        <img src="{{asset('images/logo/logo-jeanne.png')}}" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                        <img src="{{asset('images/logo/logo-kico.png')}}" alt="Logo kico SA" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                        <img src="{{asset('images/logo/logo-kamao.JPG')}}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                        <img src="{{asset('images/logo/logo-CCT.png')}}" alt="Logo kico SA" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                        <img src="{{asset('images/logo/logo-UAC.jpg')}}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                    <div class="flex w-max animate-marquee">
+                        
+                        <!-- Première série -->
+                        <div class="flex shrink-0 gap-16">
+                            <img src="{{ asset('images/logo/logo-plurielles.JPG') }}" alt="Logo plurielles" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-bank.png') }}" alt="Logo CRDB Bank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-diamant.JPG') }}" alt="Logo Centre medical diamant" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-ecobank.png') }}" alt="Logo Ecobank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-jeanne.png') }}" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-kico.png') }}" alt="Logo kico SA" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-kamao.JPG') }}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-CCT.png') }}" alt="Logo CCT" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-UAC.jpg') }}" alt="Logo UAC" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-mes.png') }}" alt="Logo MES" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-mmr.png') }}" alt="Logo MMR" loading="lazy" class="bg-black h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-normet.png') }}" alt="Logo Normet" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-prosteel.jpg') }}" alt="Logo Prosteel" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                        </div>
+
+                        <!-- Deuxième série identique -->
+                        <div class="flex shrink-0 gap-16">
+                            <img src="{{ asset('images/logo/logo-plurielles.JPG') }}" alt="Logo plurielles" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-bank.png') }}" alt="Logo CRDB Bank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-diamant.JPG') }}" alt="Logo Centre medical diamant" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-ecobank.png') }}" alt="Logo Ecobank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-jeanne.png') }}" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-kico.png') }}" alt="Logo kico SA" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-kamao.JPG') }}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-CCT.png') }}" alt="Logo CCT" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-UAC.jpg') }}" alt="Logo UAC" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-mes.png') }}" alt="Logo MES" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-mmr.png') }}" alt="Logo MMR" loading="lazy" class="bg-black h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-normet.png') }}" alt="Logo Normet" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-prosteel.jpg') }}" alt="Logo Prosteel" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                        </div>
+
                     </div>
                 </div>
 
@@ -481,13 +507,19 @@
     <style>
         /* Animation type "marquee" */
         @keyframes marquee {
-            0% { transform: translateX(0%); }
-            100% { transform: translateX(-50%); }
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
         }
+
         .animate-marquee {
             display: flex;
             width: max-content;
-            animation: marquee 15s linear infinite;
+            animation: marquee 28s linear infinite;
         }
     </style>
     <!-------------------------------------------------------------------------------------------------------->

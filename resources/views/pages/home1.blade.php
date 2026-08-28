@@ -459,7 +459,11 @@
                         <img src="{{asset('images/logo/logo-kico.png')}}" alt="Logo kico SA" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
                         <img src="{{asset('images/logo/logo-kamao.JPG')}}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
                         <img src="{{asset('images/logo/logo-CCT.png')}}" alt="Logo kico SA" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
-                        <img src="{{asset('images/logo/logo-UAC.jpg')}}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-UAC.jpg')}}" alt="Logo UAC" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-mes.png')}}" alt="Logo MES" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-mmr.png')}}" alt="Logo MMR" loading="lazy" class="h-20 bg-black object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-normet.png')}}" alt="Logo Normet" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
+                        <img src="{{asset('images/logo/logo-prosteel.png')}}" alt="Logo Prosteel" loading="lazy" class="h-20 object-contain hover:grayscale-0 transition duration-300">
                     </div>
                 </div>
             </div>
