@@ -29,11 +29,11 @@
     <!-------------------------------------------------------------------------------------------------------->
 
     <!--Distribution et solutions alimentaires intégrées-->
-    <div id="distribution" class="w-full h-14 "> </div>
+    <div id="distribution" class="w-full bg-gray-50 h-14 "> </div>
     <section class="py-15 bg-gray-50 ">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
+            <div class="flex flex-col md:flex-row gap-12 items-center p-2">
+                <div class="md:w-1/2 pl-4">
                     <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Logistique et distribution</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
                         De Dar es Salaam au cœur du Haut-Katanga et du Lualaba, nous prenons en charge toutes vos formalites de  transit et transport afin de vous livrer vos marchandises avec tracabilite et securite dans le respect des delai.   
@@ -55,8 +55,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="md:w-1/2 bg-gray-200 h-85 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
-                    <img src="{{ asset('images/assets/log1.jpg') }}" alt="service logistique" loading="lazy" srcset="" class="w-full h-85">
+                <div class="md:w-1/2 bg-gray-200 h-full rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
+                    <img src="{{ asset('images/assets/log1.jpg') }}" alt="service logistique" loading="lazy" srcset="" class="w-full h-">
                 </div>
             </div>
         </div>
@@ -67,8 +67,11 @@
     <div id="hygiene-entretien" class="w-full h-14"> </div>
     <section id="hygiene-entretien" class="py-20 border-b border-gray-100">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
+            <div class="flex flex-col md:flex-row gap-12 items-center p-2">
+                <div class="md:w-1/2 bg-gray-200 h-full rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
+                    <img src="{{ asset('images/assets/hygiene.jpeg') }}" alt="service hygiène et entretien" loading="lazy" srcset="" class="w-full h-">
+                </div>
+                <div class="md:w-1/2 pr-4">
                     <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Hygiène et entretien</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
                         Nous assurons la propreté et l’entretien des espaces professionnels, en garantissant 
@@ -96,20 +99,20 @@
                     </div>
                     
                 </div>
-                <div class="md:w-1/2 bg-gray-200 h-85 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
-                    <img src="{{ asset('images/assets/hygiene.jpeg') }}" alt="service hygiène et entretien" loading="lazy" srcset="" class="w-full h-85">
-                </div>
             </div>
         </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
     <!--Sante et securite-->
-    <div id="sante-securite" class="w-full h-14 "> </div>
+    <div id="sante-securite" class="w-full bg-gray-50 h-14 "> </div>
     <section id="sante-securite" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
-                <div class="md:w-1/2">
+            <div class="flex flex-col md:flex-row-reverse gap-12 items-center p-2">
+                <div class="md:w-1/2 bg-white border border-gray-200 h- rounded-lg shadow-xl flex items-center justify-center text-gray-300 font-bold italic">
+                    <img src="{{ asset('images/assets/lutte1.jpeg') }}" alt="service antiparasitaire" loading="lazy" srcset="" class="w-full h-">
+                </div>
+                <div class="md:w-1/2 pl-4">
                     <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Pest control et prévention</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
                         Grâce à nos solutions de lutte antiparasitaire (désinsectisation, fumigation, dératisation), au contrôle sanitaire 
@@ -133,9 +136,6 @@
                             <span class="text-md">Fumigation</span>
                         </li>
                     </ul>
-                </div>
-                <div class="md:w-1/2 bg-white border border-gray-200 h-85 rounded-lg shadow-xl flex items-center justify-center text-gray-300 font-bold italic">
-                    <img src="{{ asset('images/assets/lutte1.jpeg') }}" alt="service antiparasitaire" loading="lazy" srcset="" class="w-full h-85">
                 </div>
             </div>
         </div>

@@ -29,11 +29,11 @@
     <!-------------------------------------------------------------------------------------------------------->
 
     <!-- Logistics & Distribution -->
-    <div id="distribution" class="w-full h-14 "> </div>
+    <div id="distribution" class="w-full bg-gray-50 h-14 "> </div>
     <section id="distribution" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
+            <div class="flex flex-col md:flex-row gap-12 items-center p-2">
+                <div class="md:w-1/2 pl-4">
                     <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Logistics & Distribution</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
                         From Dar es Salaam to the heart of Haut-Katanga and Lualaba, we handle all your transit and transportation formalities, 
@@ -56,19 +56,22 @@
                         </li>
                     </ul>
                 </div>
-                <div class="md:w-1/2 bg-gray-200 h-85 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
-                    <img src="{{ asset('images/assets/log1.jpg') }}" alt="service logistique" loading="lazy" srcset="" class="w-full h-85">
+                <div class="md:w-1/2 bg-gray-200 h-full rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
+                    <img src="{{ asset('images/assets/log1.jpg') }}" alt="service logistique" loading="lazy" srcset="" class="w-full h-">
                 </div>
             </div>
         </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
     <!--Hygiene et entretien-->
-    <div id="hygiene-entretien" class="w-full h-14"> </div>
+    <div id="hygiene-entretien" class="w-full border-gray-100 h-14"> </div>
     <section id="hygiene-entretien" class="py-20 border-b border-gray-100">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
+            <div class="flex flex-col md:flex-row gap-12 items-center p-2">
+                <div class="md:w-1/2 bg-gray-200 h-full rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
+                    <img src="{{asset('images/assets/hygiene.jpeg') }}" alt="service hygiène et entretien" loading="lazy" srcset="" class="w-full h-">
+                </div>
+                <div class="md:w-1/2 pr-4">
                     <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Hygiene & Maintenance</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
                         We provide comprehensive cleaning and maintenance solutions for professional spaces, ensuring a 
@@ -96,20 +99,20 @@
                     </div>
                     
                 </div>
-                <div class="md:w-1/2 bg-gray-200 h-85 rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
-                    <img src="{{asset('images/assets/hygiene.jpeg') }}" alt="service hygiène et entretien" loading="lazy" srcset="" class="w-full h-85">
-                </div>
             </div>
         </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
     <!-- Pest Control & Prevention -->
-    <div id="sante-securite" class="w-full h-14 "> </div>
+    <div id="sante-securite" class="w-full bg-gray-50 h-14 "> </div>
     <section id="sante-securite" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
-                <div class="md:w-1/2">
+                <div class="md:w-1/2 bg-white border border-gray-200 h-full rounded-lg shadow-xl flex items-center justify-center text-gray-300 font-bold italic">
+                    <img src="{{asset('images/assets/lutte1.jpeg') }}" alt="service antiparasitaire" loading="lazy" srcset="" class="w-full h-">
+                </div>
+                <div class="md:w-1/2 pl-4">
                     <h2 class="text-3xl font-bold mt-2 mb-6 uppercase">Pest Control & Prevention</h2>
                     <p class="text-gray-800 text-lg text-justify mb-8 leading-relaxed">
                         We keep your workplace safe and healthy by controlling pests (insects, rodents), carrying out hygiene checks, 
@@ -133,9 +136,6 @@
                             <span class="text-md">Fumigation</span>
                         </li>
                     </ul>
-                </div>
-                <div class="md:w-1/2 bg-white border border-gray-200 h-85 rounded-lg shadow-xl flex items-center justify-center text-gray-300 font-bold italic">
-                    <img src="{{asset('images/assets/lutte1.jpeg') }}" alt="service antiparasitaire" loading="lazy" srcset="" class="w-full h-85">
                 </div>
             </div>
         </div>
