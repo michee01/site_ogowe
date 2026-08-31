@@ -124,7 +124,7 @@
                         
                     </div>
 
-                </div>
+                </div> 
 
                 <div class="bg-gray-50 p-8 md:p-12 shadow-sm border-t-4 border-black">
                     <h2 class="text-2xl font-bold mb-8 uppercase tracking-tight">Envoyez-nous un message</h2>

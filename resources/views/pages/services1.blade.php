@@ -30,7 +30,7 @@
 
     <!-- Logistics & Distribution -->
     <div id="distribution" class="w-full bg-gray-50 h-14 "> </div>
-    <section id="distribution" class="py-20 bg-gray-50">
+    <section id="distribution" class="py-14 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row gap-12 items-center p-2">
                 <div class="md:w-1/2 pl-4">
@@ -65,7 +65,7 @@
     <!-------------------------------------------------------------------------------------------------------->
     <!--Hygiene et entretien-->
     <div id="hygiene-entretien" class="w-full border-gray-100 h-14"> </div>
-    <section id="hygiene-entretien" class="py-20 border-b border-gray-100">
+    <section id="hygiene-entretien" class="py-14 border-b border-gray-100">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row gap-12 items-center p-2">
                 <div class="md:w-1/2 bg-gray-200 h-full rounded-lg shadow-inner flex items-center justify-center text-gray-400 font-bold italic">
@@ -106,7 +106,7 @@
 
     <!-- Pest Control & Prevention -->
     <div id="sante-securite" class="w-full bg-gray-50 h-14 "> </div>
-    <section id="sante-securite" class="py-20 bg-gray-50">
+    <section id="sante-securite" class="py-14 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
                 <div class="md:w-1/2 bg-white border border-gray-200 h-full rounded-lg shadow-xl flex items-center justify-center text-gray-300 font-bold italic">

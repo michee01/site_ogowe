@@ -199,7 +199,7 @@
 
                 <div class="bg-black text-white p-8 rounded-br-3xl shadow-2xl">
                     <h3 class="text-red-600 font-bold uppercase tracking-widest mb-4">Notre Mission</h3>
-                    <p class="text-lg italic font-light text-justify  scroll-animate">
+                    <p class="text-lg italic font-light text-justify scroll-animate">
                         La mission d’Ogowe est d’assurer la fluidité logistique et la sécurité sanitaire de ses clients, 
                         en offrant des solutions intégrées  innovantes qui allient performance, fiabilité et durabilité.
                     </p>
@@ -213,13 +213,13 @@
                     <div id="slider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="{{ asset('images/assets/hygiene.jpeg') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
+                            <img src="{{ asset('images/assets/log1.jpg') }}" alt="Équipe Ogowe" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
-                                <p class="font-black text-lg uppercase tracking-tight">Hygiène et Entrerien</p>
+                                <p class="font-black text-lg uppercase tracking-tight">Logistique et distribution</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
                         </div>
-
+                        
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/lutte1.jpeg') }}" alt="Lutte Antiparasitaire" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
@@ -229,9 +229,9 @@
                         </div>         
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="{{ asset('images/assets/log1.jpg') }}" alt="Équipe Ogowe" loading="lazy" class="object-cover w-full h-full">
+                            <img src="{{ asset('images/assets/hygiene.jpeg') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
-                                <p class="font-black text-lg uppercase tracking-tight">Distribution et solutions alimentaires intégrées</p>
+                                <p class="font-black text-lg uppercase tracking-tight">Hygiène et Entrerien</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
                         </div>

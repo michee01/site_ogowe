@@ -66,7 +66,7 @@
             <div class="grid md:grid-cols-2 gap-16">
                 
                 <div class="space-y-12">
-                    <div>
+                    <div class="p-4">
                         <h2 class="text-2xl font-bold mb-8 uppercase tracking-tight">Contact Information</h2>
                         <div class="space-y-6">
                             <div class="flex items-start space-x-4">
