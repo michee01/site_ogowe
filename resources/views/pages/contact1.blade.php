@@ -4,46 +4,52 @@
 
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--
+        <style>
+            .whatsapp-float {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #25d366;
+                color: white;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 30px;
+                box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+            }
+        </style>
+    -->
 
-    <style>
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-        }
-    </style>
+    <header class="relative bg-gray-950 text-white overflow-hidden">
 
-
-    <header class="relative bg-black text-white py-20 overflow-hidden">
-        <!-- Image de fond -->
         <div class="absolute inset-0">
-            <img src="{{ asset('images/logo/logo-ogowe1.png') }}" alt="Fond header" loading="lazy" class="w-full h-full object-cover opacity-60">
-            <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
+            <img
+                src="{{ asset('images/logo/logo-ogowe1.png') }}"
+                alt=""
+                class="w-full h-full object-cover opacity-30"
+            >
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/5 to-black/2"></div>
         </div>
-
-        <!-- Contenu -->
-        <div class="container mx-auto px-6 relative z-10">
-            <h1 class="text-4xl md:text-5xl font-black uppercase mb-4">Contact us</h1>
-            <p class="text-xl text-gray-200 max-w-xl text-justify">
-                Contact us for all your transit and transportation needs from Dar es Salaam, as well as for the sanitation and maintenance of your premises.
-            </p>
+        <div class="relative z-10 container mx-auto px-6 py-16 md:py-20">
+            <div class="max-w-4xl">
+                <div class="flex items-center gap-3 mb-5">
+                    <span class="w-12 h-1 bg-red-600"></span>
+                    <span class="w-6 h-1 bg-white"></span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight leading-tight">
+                    Contact Us
+                </h1>
+            </div>
         </div>
+        <div class="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-red-600/10"></div>
 
-        <!-- Décoratif cercle rouge -->
-        <div class="absolute top-0 right-0 w-64 h-64 bg-red-600 opacity-20 -mr-20 -mt-20 rounded-full z-0"></div>
     </header>
 
 
@@ -147,10 +153,10 @@
                             <label class="block text-sm font-bold uppercase mb-2">Service Type</label>
                             <select name="objet" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
                                 <option value="">Select a service</option>
-                                <option value="Hygiene-Entretien">Logistics & Distribution</option>
-                                <option value="Lutte Antiparasitaire">Hygiene & Maintenance</option>
-                                <option value="Gestion de cantines">Pest Control & Prevention</option>
-                                <option value="Distribution">Others</option>
+                                <option value="Logistics-Distribution">Logistics & Distribution</option>
+                                <option value="Hygiene-Cleaning">Hygiene & Cleaning</option>
+                                <option value="Halth-Safety">Health & Safety</option>
+                                <option value="Others">Others</option>
                             </select>
                         </div>
                         <div>
@@ -166,20 +172,12 @@
             </div>
         </div>
     </section>
-
+    <!--
     <a href="https://wa.me/243977976226" class="whatsapp-float group" target="_blank">
         <span class="text-xl mr-2">💬</span> 
         <span class="text-xs uppercase tracking-tighter">Pest Emergency</span>
     </a>
-    
-    
-    <style> 
-        .page3 {
-            border-bottom: 4px solid black;
-            padding-bottom: 2px;
-            }
-    </style>
-    
+    -->
     
 @endsection
 

@@ -4,48 +4,53 @@
 
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--
+        <style>
+            .whatsapp-float {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #25d366;
+                color: white;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 30px;
+                box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+            }
+        </style>
+    -->
+    <header class="relative bg-gray-950 text-white overflow-hidden">
 
-    <style>
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-        }
-    </style>
-    
-    <header class="relative bg-black text-white py-20 overflow-hidden">
-        <!-- Image de fond -->
         <div class="absolute inset-0">
-            <img src="{{ asset('images/logo/logo-ogowe1.png') }}" alt="Fond header" loading="lazy" class="w-full h-full object-cover opacity-60">
-            <div class="absolute inset-0 bg-black/20"></div> <!-- Overlay sombre pour lisibilité -->
+            <img
+                src="{{ asset('images/logo/logo-ogowe1.png') }}"
+                alt=""
+                class="w-full h-full object-cover opacity-30"
+            >
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/5 to-black/2"></div>
         </div>
-
-        <!-- Contenu -->
-        <div class="container mx-auto px-6 relative z-10">
-            <h1 class="text-4xl md:text-5xl font-black uppercase mb-4">Contactez-nous</h1>
-            <p class="text-xl text-gray-200 max-w-xl text-justify">
-                Contactez nous pour tous vos besoins de Transit et transport  a  partir de Dar es salam ainsi qu’a l’assainissement de vos environnments.
-            </p>
+        <div class="relative z-10 container mx-auto px-6 py-16 md:py-20">
+            <div class="max-w-4xl">
+                <div class="flex items-center gap-3 mb-5">
+                    <span class="w-12 h-1 bg-red-600"></span>
+                    <span class="w-6 h-1 bg-white"></span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight leading-tight">
+                    Nos Contact
+                </h1> 
+            </div>
         </div>
+        <div class="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-red-600/10"></div>
 
-        <!-- Décoratif cercle rouge -->
-        <div class="absolute top-0 right-0 w-64 h-64 bg-red-600 opacity-20 -mr-20 -mt-20 rounded-full z-0"></div>
     </header>
 
-    
 @if(session()->has('success'))
     <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
         <strong class="font-bold">Succès !</strong>
@@ -120,10 +125,8 @@
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
-                        </div>
-                        
+                        </div>                        
                     </div>
-
                 </div> 
 
                 <div class="bg-gray-50 p-8 md:p-12 shadow-sm border-t-4 border-black">
@@ -146,10 +149,10 @@
                             <label class="block text-sm font-bold uppercase mb-2">Type de service souhaité</label>
                             <select name="objet" class="w-full p-2 border border-gray-300 focus:outline-none focus:border-red-600 transition" required>
                                 <option value="">Sélectionnez un service</option>
-                                <option value="Lutte Antiparasitaire">Logistique et distribution</option>
-                                <option value="Hygiene-Entretien">Hygiene et Entretien</option>
-                                <option value="Gestion de cantines">Pest control et prévention</option>
-                                <option value="Distribution">Autres</option>
+                                <option value="Logistique-Distribution">Logistique et Distribution</option>
+                                <option value="Hygiène-Entretien">Hygiene et Entretien</option>
+                                <option value="Santé-Sécurité">Santé et Sécurité</option>
+                                <option value="Autres">Autres</option>
                             </select>
                         </div>
                         <div>
@@ -165,20 +168,12 @@
             </div>
         </div>
     </section>
-
+    <!-- 
     <a href="https://wa.me/243977976226" class="whatsapp-float group" target="_blank">
         <span class="text-xl mr-2">💬</span> 
         <span class="text-xs uppercase tracking-tighter">Urgence Nuisibles</span>
     </a>
-    
-    
-    <style> 
-        .page3 {
-            border-bottom: 4px solid black;
-            padding-bottom: 2px;
-            }
-    </style>
-    
-    
+    -->
+            
 @endsection
 

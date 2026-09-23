@@ -13,15 +13,13 @@
                 <div class="flex space-x-4">
                     <span class="text-sm font-semibold uppercase tracking-tighter border-l-2 border-white pl-2 ml-2 text-gray-400">
                     @if(session('lang') == 'fr')    
+                        Logistique et Distribution<br>  
                         Hygiène et entretien des entreprises <br> 
                         Santé et sécurité environnementale<br>
-                        Distribution <br>
-                        Solutions alimentaires intégrées<br>
                     @else
-                        Corporate Hygiene & Maintenance <br> 
-                        Environmental Health & Safety<br>
-                        Distribution <br>
-                        Food Integrated Solutions<br>
+                        Logistics and Distribution<br>  
+                        Hygiene and cleaning<br> 
+                        health and safety<br>
                     @endif
                     </span>
                 </div>

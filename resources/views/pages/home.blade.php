@@ -5,141 +5,246 @@
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!--Section Hero-->
-    <section class="relative min-h-[550px] md:min-h-[600px] flex items-center bg-gray-900 text-white py-20 px-4 overflow-hidden">
-        
+    <section class="relative min-h-[630px] md:min-h-[630px] flex items-center bg-gray-900 text-white py-0 px-4 overflow-hidden">
+
         <!-- Slider -->
         <div id="1" class="absolute inset-0 z-0 overflow-hidden">
             <div id="hero-slider" class="w-full h-full relative">
-                
-                <!-- Slide 1 -->
+
+                <!-- =========================
+                    Slide 1
+                ========================== -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-100 slide">
-                    <img src="{{ asset('images/assets/lutte2.jpeg') }}"  loading="lazy" class="object-cover w-full h-full" alt="Équipe sur le terrain">
-                    <div class="absolute inset-0 bg-black/40"></div> 
-                </div>
-                
-                <!-- Slide 2 -->
-                <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
-                    <img src="{{ asset('images/assets/nettoyage7.jpeg') }}" loading="lazy" class="object-cover w-full h-full" alt="Nettoyage industriel">
-                    <div class="absolute inset-0 bg-black/40"></div>
-                </div>
-                
-                <!-- Slide 3 -->
-                <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
-                    <img src="{{ asset('images/assets/resto6.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Lutte antiparasitaire">
-                    <div class="absolute inset-0 bg-black/40"></div>
-                </div>
-                
-                <!-- Slide 4 -->
-                <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
-                    <img src="{{ asset('images/assets/log1.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Catering et restauration">
-                    <div class="absolute inset-0 bg-black/40"></div>
+
+                    <img 
+                        src="{{ asset('images/assets/base/logistique.webp') }}"
+                        loading="lazy"
+                        class="object-cover w-full h-full"
+                        alt="Solutions de logistique et distribution"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30"></div>
+                    <!-- Contenu Slide -->
+                    <div class="absolute inset-0 flex items-center z-20">
+                        <div class="container mx-auto max-w-6xl px-4">
+
+                            <div class="max-w-3xl font-mono zoom-in">                                
+                                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+                                    Logistique
+                                    <span class="text-red-600">&amp; <br> Distribution</span>
+                                </h2>
+                                <br> <br>
+                               
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <a href="{{route('contact')}}"
+                                        class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded font-bold uppercase transition transform hover:-translate-y-1 shadow-xl text-center">
+                                        Demander un devis
+                                    </a>
+                                    <a href="https://wa.me/243977976226"
+                                        class="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded font-bold uppercase transition transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-xl">
+                                        <span>💬</span>
+                                        WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Slide 5 -->
+                <!-- =========================
+                    Slide 2
+                ========================== -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
-                    <img src="{{ asset('images/assets/nettoyage2.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Approvisionnement">
-                    <div class="absolute inset-0 bg-black/40"></div>
+                    <img 
+                        src="{{ asset('images/assets/base/entretien2.webp') }}"
+                        loading="lazy"
+                        class="object-cover w-full h-full"
+                        alt="Services professionnels d'hygiène et entretien"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30"></div>
+                    <!-- Contenu Slide -->
+                    <div class="absolute inset-0 flex items-center z-20">
+                        <div class="container mx-auto max-w-6xl px-4">
+
+                            <div class="max-w-3xl font-mono zoom-in">
+                                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+                                    Hygiène
+                                    <span class="text-red-600">&amp; <br> Entretien</span>
+                                </h2>
+                                <br> <br>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <a href="{{route('contact')}}"
+                                        class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded font-bold uppercase transition transform hover:-translate-y-1 shadow-xl text-center">
+                                        Demander un devis
+                                    </a>
+                                    <a href="https://wa.me/243977976226"
+                                        class="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded font-bold uppercase transition transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-xl">
+                                        <span>💬</span>
+                                        WhatsApp
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Slide 6 -->
+                <!-- =========================
+                    Slide 3
+                ========================== -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
-                    <img src="{{ asset('images/assets/log7.jpg') }}" loading="lazy" class="object-cover w-full h-full" alt="Locaux professionnels">
-                    <div class="absolute inset-0 bg-black/40"></div>
+                    <img 
+                        src="{{ asset('images/assets/base/sante1.webp') }}"
+                        loading="lazy"
+                        class="object-cover w-full h-full"
+                        alt="Services de santé et sécurité"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30"></div>
+                    <!-- Contenu Slide -->
+                    <div class="absolute inset-0 flex items-center z-20">
+                        <div class="container mx-auto max-w-6xl px-4">
+
+                            <div class="max-w-3xl font-mono zoom-in">
+                                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+                                    Santé
+                                    <span class="text-red-600">&amp; <br> Sécurité</span>
+                                </h2>
+                                <br> <br>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <a href="{{route('contact')}}"
+                                        class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded font-bold uppercase transition transform hover:-translate-y-1 shadow-xl text-center">
+                                        Demander un devis
+                                    </a>
+                                    <a href="https://wa.me/243977976226"
+                                        class="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded font-bold uppercase transition transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-xl">
+                                        <span>💬</span>
+                                        WhatsApp
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </div>
-        
-        <!-- Texte + CTA -->
-        <div id="2" class="font-mono container mx-auto relative z-10 max-w-6xl">
-            <style>
-                @keyframes zoomInFade {
-                    0% { transform: scale(0.9); opacity: 0; }
-                    100% { transform: scale(1); opacity: 1; }
+
+        <!-- Animation du contenu -->
+        <style>
+            @keyframes zoomInFade {
+                0% {
+                    transform: scale(0.9);
+                    opacity: 0;
                 }
-                .zoom-in { animation: zoomInFade 1.5s ease forwards; }
-            </style>
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            .zoom-in {
+                animation: zoomInFade 1.5s ease forwards;
+            }
+        </style>
 
-            <h1 class="font-poppins text-6xl md:text-6xl text-white max-w-2xl mb-6 leading-tight zoom-in">
-                Hygiène, santé et solutions intégrées pour vos equipes
-            </h1>
-
-            <p class="text-lg md:text-xl text-white max-w-2xl mb-10 p-2 opacity-100 zoom-in">
-                L'excellence au coeur de votre environnement
-            </p>
-
-            <!-- CTA hiérarchisés -->
-            <div class="flex flex-col md:flex-row gap-4">
-                <a href="{{route('contact')}}" 
-                    class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded font-bold uppercase transition transform hover:-translate-y-1 shadow-xl">
-                    Demander un devis  
-                </a>
-                <a href="https://wa.me/243977976226" 
-                    class="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded font-bold uppercase transition transform hover:-translate-y-1 flex items-center gap-2 shadow-xl">
-                    <span>💬</span> WhatsApp
-                </a>
-            </div>
-        </div>
-
-        <!-- Overlay décoratif -->
         <div class="absolute top-0 right-0 w-1/3 h-full bg-red-600 opacity-0 skew-x-12 translate-x-1/2 hidden md:block"></div>
 
         <!-- Indicateurs de slide -->
         <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex items-center gap-6 z-20">
+
             <!-- Flèche gauche -->
-            <button id="prevSlide" class="text-white hover:text-red-600 transition text-2xl">&#8592;</button>
-            
+            <button
+                id="prevSlide"
+                type="button"
+                aria-label="Slide précédent"
+                class="text-white hover:text-red-600 transition text-2xl">
+                &#8592;
+            </button>
             <!-- Points -->
-            <div id="slideIndicators" class="flex gap-2">
-                <!-- Les points seront générés dynamiquement -->
-            </div>
-            
+            <div id="slideIndicators" class="flex gap-2"></div>
             <!-- Flèche droite -->
-            <button id="nextSlide" class="text-white hover:text-red-600 transition text-2xl">&#8594;</button>
+            <button
+                id="nextSlide"
+                type="button"
+                aria-label="Slide suivant"
+                class="text-white hover:text-red-600 transition text-2xl">
+                &#8594;
+            </button>
         </div>
     </section>
 
     <script>
         let currentSlide = 0;
+
         const slides = document.querySelectorAll('#hero-slider .slide');
         const totalSlides = slides.length;
         const indicators = document.getElementById('slideIndicators');
 
         // Générer les points
         for (let i = 0; i < totalSlides; i++) {
+
             const dot = document.createElement('span');
-            dot.classList.add('w-3','h-3','rounded-full','cursor-pointer');
-            dot.classList.add(i === 0 ? 'bg-white' : 'bg-gray-400');
+            dot.classList.add(
+                'w-3',
+                'h-3',
+                'rounded-full',
+                'cursor-pointer',
+                'transition'
+            );
+            dot.classList.add(
+                i === 0 ? 'bg-white' : 'bg-gray-400'
+            );
             dot.addEventListener('click', () => showSlide(i));
             indicators.appendChild(dot);
         }
-
+        // Afficher une slide
         function showSlide(index) {
+            // Cacher la slide actuelle
             slides[currentSlide].classList.remove('opacity-100');
             slides[currentSlide].classList.add('opacity-0');
+            // Mettre à jour son indicateur
             indicators.children[currentSlide].classList.remove('bg-white');
             indicators.children[currentSlide].classList.add('bg-gray-400');
-
+            // Nouvelle slide
             currentSlide = index;
-
+            // Afficher la nouvelle slide
             slides[currentSlide].classList.remove('opacity-0');
             slides[currentSlide].classList.add('opacity-100');
+            // Mettre à jour son indicateur
             indicators.children[currentSlide].classList.remove('bg-gray-400');
             indicators.children[currentSlide].classList.add('bg-white');
-        }
+            // Relancer l'animation du contenu
+            const content = slides[currentSlide].querySelector('.zoom-in');
 
+            if (content) {
+                content.classList.remove('zoom-in');
+
+                void content.offsetWidth;
+
+                content.classList.add('zoom-in');
+            }
+        }
+        // Slide suivante
         function nextHeroSlide() {
             showSlide((currentSlide + 1) % totalSlides);
         }
-
+        // Slide précédente
         function prevHeroSlide() {
-            showSlide((currentSlide - 1 + totalSlides) % totalSlides);
+            showSlide(
+                (currentSlide - 1 + totalSlides) % totalSlides
+            );
         }
-
-        document.getElementById('nextSlide').addEventListener('click', nextHeroSlide);
-        document.getElementById('prevSlide').addEventListener('click', prevHeroSlide);
-
-        // Défilement automatique toutes les 6 secondes
+        // Navigation
+        document
+            .getElementById('nextSlide')
+            .addEventListener('click', nextHeroSlide);
+        document
+            .getElementById('prevSlide')
+            .addEventListener('click', prevHeroSlide);
+        // Défilement automatique toutes les 5 secondes
         setInterval(nextHeroSlide, 5000);
     </script>
     <!-------------------------------------------------------------------------------------------------------->
@@ -175,9 +280,10 @@
                     <span class="w-8 h-px bg-red-600 mr-4"></span>
                     Ogowe
                 </h2>
-                <p class="text-lg text-gray-800 leading-relaxed mb-6 text-justify  scroll-animate">               
-                    Chez Ogowe, nous sommes votre partenaire de confiance pour la logistique et distribution ainsi que pour la gestion sanitaire et environnementale. 
-                    Notre mission est d’assurer la fluidité de vos opérations et de protéger vos équipes et infrastructures, tout en reflétant l’excellence de votre image.
+                <p class="text-md text-black leading-relaxed mb-6 text-justify  scroll-animate">  
+                    Ogowe est une société de services intégrés qui accompagne ses clients dans la gestion complète des opérations de transit entre Dar es Salaam, 
+                    le Haut-Katanga et le Lualaba. Nous assurons également l’approvisionnement en produits agroalimentaires secs destinés aux sites miniers, 
+                    ainsi que la mise en place de solutions sanitaires et environnementales incluant le nettoyage professionnel et la lutte antiparasitaire.
                 </p>
 
                 <script>
@@ -199,9 +305,9 @@
 
                 <div class="bg-black text-white p-8 rounded-br-3xl shadow-2xl">
                     <h3 class="text-red-600 font-bold uppercase tracking-widest mb-4">Notre Mission</h3>
-                    <p class="text-lg italic font-light text-justify scroll-animate">
-                        La mission d’Ogowe est d’assurer la fluidité logistique et la sécurité sanitaire de ses clients, 
-                        en offrant des solutions intégrées  innovantes qui allient performance, fiabilité et durabilité.
+                    <p class="text-md italic font-light text-justify scroll-animate">
+                        Garantir la fluidité des opérations de nos partenaires, protéger leurs équipes et infrastructures grâce à des solutions sanitaires et 
+                        environnementales fiables tout en reflétant l’excellence et la fiabilité de leur image.
                     </p>
                 </div>
             </div>
@@ -210,31 +316,32 @@
 
                 <div class="relative z-10 bg-gray-200 h-96 flex items-center justify-center text-gray-600 font-bold overflow-hidden rounded-2xl shadow-xl">
                     
-                    <div id="slider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
+                    <div id="slider" class="flex w-full h-full transition-transform duration-700 ease-in-out">   
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="{{ asset('images/assets/log1.jpg') }}" alt="Équipe Ogowe" loading="lazy" class="object-cover w-full h-full">
+                            <img src="{{ asset('images/assets/base/equipe1.webp') }}" alt="Service de Logistique et distribution" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
-                                <p class="font-black text-lg uppercase tracking-tight">Logistique et distribution</p>
+                                <p class="font-black text-lg uppercase tracking-tight font-semibold">Logistique et distribution</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
                         </div>
-                        
-                        <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="{{ asset('images/assets/lutte1.jpeg') }}" alt="Lutte Antiparasitaire" loading="lazy" class="object-cover w-full h-full">
-                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
-                                <p class="font-black text-lg uppercase tracking-tight">Santé et securité</p>
-                                <p class="text-xs text-gray-300 font-medium mt-1">.</p>
-                            </div>
-                        </div>         
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="{{ asset('images/assets/hygiene.jpeg') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
+                            <img src="{{ asset('images/assets/base/equipe2.webp') }}" alt="Service de Hygiène et Entrerien" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
-                                <p class="font-black text-lg uppercase tracking-tight">Hygiène et Entrerien</p>
+                                <p class="font-black text-lg uppercase tracking-tight font-semibold">Hygiène et Entrerien</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
-                        </div>
+                        </div> 
+
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <img src="{{ asset('images/assets/base/sante1.webp') }}" alt="Service de Santé et securité" loading="lazy" class="object-cover w-full h-full">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <p class="font-black text-lg uppercase tracking-tight font-semibold">Santé et securité</p>
+                                <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                            </div>
+                        </div>     
+
 
                     </div>
 
@@ -308,8 +415,8 @@
                         Nos <span class="text-red-600">points Clés</span>
                     </h3>
                 </div>
-                <p class="text-gray-500 font-medium max-w-xs md:text-right italic">
-                    Des solutions intégrées pour le secteur industriel, minier et corporatif à Lubumbashi.
+                <p class="text-gray-600 text-md font-medium max-w-xs md:text-right italic">
+                    Des solutions intégrées pour le secteur industriel, minier et corporatif à Katanga.
                 </p>
             </div>
 
@@ -317,14 +424,26 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Carte 1 -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
+                <div class="bg-white p-6 px-8 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
                     <div class="text-5xl mb-4">🚚</div>
                     <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Logistique & distribution</h4>
-                    <p class="text-gray-700 text-sm leading-relaxed mb-6 text-justify">
+                    <p class="text-gray-800 text-md leading-relaxed mb-2 text-justify hyphens-auto">
                         De Dar es Salaam au cœur du Haut-Katanga et du Lualaba, nous prenons en charge : <br>
-                        •	Transit Dar es Salaam : formalités de transit et transport. <br>
-                        •	Transport et FERI/COD : traçabilité et sécurité garanties. <br>
-                        •	Distribution : carburant et produits agro-alimentaires secs, livrés dans le respect des délais.
+                        <ul class="text-gray-800 text-md list-disc space-y-1 mb-2 pl-10 text-left">
+                            <li>
+                                <strong>Transit Dar es Salaam :</strong>
+                                formalités de transit et de transport.
+                            </li>
+                            <li>
+                                <strong>Transport et FERI/COD :</strong>
+                                traçabilité et sécurité garanties.
+                            </li>
+                            <li>
+                                <strong>Distribution :</strong>
+                                carburant et produits agroalimentaires secs, livrés dans le respect des délais.
+                            </li>
+                        </ul>
+                       	
                     </p>
                     <a href="{{route('services')}}#distribution" 
                         class="mt-auto text-green-600 font-bold hover:underline">
@@ -333,10 +452,10 @@
                 </div>
 
                 <!-- Carte 2 -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
+                <div class="bg-white p-6 px-8 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
                     <div class="text-5xl mb-4">🧹</div>
                     <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Hygiène & entretien</h4>
-                    <p class="text-gray-700 text-md leading-relaxed mb-6 text-justify">
+                    <p class="text-gray-800 text-md leading-relaxed mb-6 text-justify hyphens-auto">
                         Nous assurons la propreté des espaces professionnels, en garantissant un environnement impeccable qui valorise l’image de nos clients.
                     </p>
                     <a href="{{route('services')}}#hygiene-entretien" 
@@ -346,12 +465,10 @@
                 </div>
 
                 <!-- Carte 3 -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
+                <div class="bg-white p-6 px-8 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
                     <div class="text-5xl mb-4">🛡️</div>
-                    <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">
-                        Pest control & prévention
-                    </h4>
-                    <p class="text-gray-700 text-md leading-relaxed mb-6 text-justify">
+                    <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Santé & sécurité</h4>
+                    <p class="text-gray-800 text-md leading-relaxed mb-6 text-justify hyphens-auto">
                         Grâce à nos solutions de lutte antiparasitaire (désinsectisation, fumigation, dératisation), au contrôle sanitaire et à la prévention durable,
                         nous protégeons vos équipes et vos infrastructures contre les risques sanitaires.
                     </p>
@@ -383,46 +500,11 @@
                     Nos <span class="text-red-600">engagements</span> 
                     <span class="absolute -bottom-4 left-0 w-full h-1.5 bg-red-600"></span>
                 </h2>
-                <p class="mt-8 text-gray-800 leading-relaxed text-xl max-w-4xl mx-auto text-center">
+                <p class="mt-8 text-gray-800 leading-relaxed text-3xl max-w-4xl mx-auto text-center">
                     Avec Ogowe, vous bénéficiez d’une expertise complète, allant de la logistique internationale à la protection sanitaire locale, pour un environnement sûr et performant.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Fiabilité -->
-                <div class="group bg-white p-10 shadow-sm border-b-4 border-black hover:border-red-600 transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-14 h-14 bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
-                        <i class="fa-solid fa-circle-check text-2xl text-black group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight">Fiabilité</h3>
-                    <p class="text-gray-600 leading-relaxed text-md text-justify">
-                        Respect des délais et traçabilité totale.
-                    </p>
-                </div>
-
-                <!-- Sécurité -->
-                <div class="group bg-white p-10 shadow-sm border-b-4 border-red-600 hover:border-black transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-14 h-14 bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-black transition-colors">
-                        <i class="fa-solid fa-shield-halved text-2xl text-black group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight text-red-600 group-hover:text-black">Sécurité</h3>
-                    <p class="text-gray-600 leading-relaxed text-md text-justify">
-                        Protection optimale de vos marchandises et de vos espaces.
-                    </p>
-                </div>
-
-                <!-- Innovation -->
-                <div class="group bg-white p-10 shadow-sm border-b-4 border-black hover:border-red-600 transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-14 h-14 bg-gray-100 flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
-                        <i class="fa-solid fa-lightbulb text-2xl text-black group-hover:text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight">Innovation</h3>
-                    <p class="text-gray-600 leading-relaxed text-md text-justify">
-                        Solutions modernes et durables pour un impact positif.
-                    </p>
-                </div>
-
-            </div>
         </div>
     </section>
     <!-- Ajoute Font Awesome -->
@@ -465,11 +547,9 @@
                         
                         <!-- Première série -->
                         <div class="flex shrink-0 gap-16">
-                            <img src="{{ asset('images/logo/logo-plurielles.JPG') }}" alt="Logo plurielles" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
-                            <img src="{{ asset('images/logo/logo-bank.png') }}" alt="Logo CRDB Bank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
-                            <img src="{{ asset('images/logo/logo-diamant.JPG') }}" alt="Logo Centre medical diamant" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            
+                            <img src="{{ asset('images/logo/logo-bank.png') }}" alt="Logo CRDB Bank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">                            
                             <img src="{{ asset('images/logo/logo-ecobank.png') }}" alt="Logo Ecobank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
-                            <img src="{{ asset('images/logo/logo-jeanne.png') }}" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
                             <img src="{{ asset('images/logo/logo-kico.png') }}" alt="Logo kico SA" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
                             <img src="{{ asset('images/logo/logo-kamao.JPG') }}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
                             <img src="{{ asset('images/logo/logo-CCT.png') }}" alt="Logo CCT" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
@@ -478,15 +558,13 @@
                             <img src="{{ asset('images/logo/logo-mmr.png') }}" alt="Logo MMR" loading="lazy" class="bg-black h-20 w-auto shrink-0 object-contain">
                             <img src="{{ asset('images/logo/logo-normet.png') }}" alt="Logo Normet" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
                             <img src="{{ asset('images/logo/logo-prosteel.jpg') }}" alt="Logo Prosteel" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-gelux.png') }}" alt="Logo Gelux" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-smt.webp') }}" alt="Logo SMT" loading="lazy" class="pr-12 h-20 w-auto shrink-0 object-contain">
                         </div>
-
                         <!-- Deuxième série identique -->
                         <div class="flex shrink-0 gap-16">
-                            <img src="{{ asset('images/logo/logo-plurielles.JPG') }}" alt="Logo plurielles" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
-                            <img src="{{ asset('images/logo/logo-bank.png') }}" alt="Logo CRDB Bank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
-                            <img src="{{ asset('images/logo/logo-diamant.JPG') }}" alt="Logo Centre medical diamant" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-bank.png') }}" alt="Logo CRDB Bank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">                            
                             <img src="{{ asset('images/logo/logo-ecobank.png') }}" alt="Logo Ecobank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
-                            <img src="{{ asset('images/logo/logo-jeanne.png') }}" alt="Logo Polyclinique Jeanne d'Arc" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
                             <img src="{{ asset('images/logo/logo-kico.png') }}" alt="Logo kico SA" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
                             <img src="{{ asset('images/logo/logo-kamao.JPG') }}" alt="Logo Kamao COPPER S.A" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
                             <img src="{{ asset('images/logo/logo-CCT.png') }}" alt="Logo CCT" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
@@ -495,6 +573,8 @@
                             <img src="{{ asset('images/logo/logo-mmr.png') }}" alt="Logo MMR" loading="lazy" class="bg-black h-20 w-auto shrink-0 object-contain">
                             <img src="{{ asset('images/logo/logo-normet.png') }}" alt="Logo Normet" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
                             <img src="{{ asset('images/logo/logo-prosteel.jpg') }}" alt="Logo Prosteel" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-gelux.png') }}" alt="Logo Gelux" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
+                            <img src="{{ asset('images/logo/logo-smt.webp') }}" alt="Logo SMT" loading="lazy" class="pr-12 h-20 w-auto shrink-0 object-contain">
                         </div>
 
                     </div>
@@ -525,46 +605,45 @@
     <!-------------------------------------------------------------------------------------------------------->
 
     <!--Call to action-->
-    <section class="py-16 mb-20 bg-black relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-64 h-64 bg-red-600 opacity-20 -mr-32 -mt-32 rounded-full blur-3xl"></div>
-        
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
-            
-            <!-- Texte -->
-            <div class="text-center md:text-left md:max-w-2xl">
-                <h4 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter mb-4">
-                Rejoignez les <span class="text-red-600">entreprises</span> du Katanga qui nous font confiance
-                </h4>
-                <p class="text-gray-400 text-lg text-justify">
-                    Ogowe propose des solutions de nettoyage, d'hygiène et entretien, de lutte antiparasitaire, de distribution et solutions alimentaire intégrées.
-                </p>
+    <section class="relative mb-20 overflow-hidden bg-black py-20">
+
+        <!-- Décoration -->
+        <div class="absolute -right-32 -top-32 h-64 w-64 rounded-full bg-red-600 opacity-20 blur-3xl"></div>
+
+        <div class="container relative z-10 mx-auto px-6">
+
+            <!-- Contenu principal -->
+            <div class="flex flex-col items-center justify-between gap-10 md:flex-row">
+
+                <!-- Texte -->
+                <div class="w-full text-center md:max-w-2xl md:text-left">
+                    <h4 class="text-3xl font-black uppercase tracking-tighter text-white md:text-4xl">
+                        Rejoignez les
+                        <span class="text-red-600">entreprises</span>
+                        du Katanga qui nous font confiance
+                    </h4>
+                </div>
+
+                <!-- Boutons -->
+                <div class="flex w-full flex-col items-center justify-center gap-4 sm:flex-row md:w-auto">
+
+                    <!-- Bouton Devis -->
+                    <a href="{{route('contact')}}"
+                    class="flex w-full items-center justify-center rounded-md border-2 border-gray-100 bg-green-600 px-8 py-4 text-center text-lg font-black uppercase tracking-widest text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-green-700 sm:w-auto">
+                        Obtenir un devis gratuit
+                    </a>
+
+                    <!-- Bouton WhatsApp -->
+                    <a href="https://wa.me/243977976226"
+                    class="flex w-full items-center justify-center gap-2 rounded-md border-2 border-white px-8 py-4 text-center text-lg font-black uppercase tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black sm:w-auto">
+                        <span class="text-xl">💬</span>
+                        Contact
+                    </a>
+
+                </div>
+
             </div>
 
-            <!-- Boutons -->
-            <div class="flex flex-col sm:flex-row items-center gap-4">
-                <a href="{{route('contact')}}" class="w-full rounded-lg sm:w-auto bg-green-700 hover:bg-green-600 text-white font-black uppercase tracking-widest px-10 py-5 transition-all duration-300 transform hover:-translate-y-1 shadow-xl text-center">
-                Obtenir un devis gratuit
-                </a>
-                <a href="https://wa.me/243977976226" class="w-full rounded-lg sm:w-auto flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-black font-black uppercase tracking-widest px-8 py-5 transition-all duration-300 text-center">
-                <span class="text-xl">💬</span> Contact
-                </a>
-            </div>
-            </div>
-
-            <!-- Badge équipe disponible -->
-            <div class="mt-8 flex justify-center md:justify-start">
-            <span class="bg-green-600 text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-md animate-pulse">
-                ✅ Équipe disponible aujourd'hui
-            </span>
-            </div>
-
-            <!-- Barre de réassurance -->
-            <div class="mt-12 flex items-center justify-center md:justify-start gap-8 opacity-40">
-            <span class="text-white text-[10px] font-bold uppercase tracking-[0.2em]">Réponse sous 24h</span>
-            <span class="text-white text-[10px] font-bold uppercase tracking-[0.2em]">Intervention Katanga</span>
-            <span class="text-white text-[10px] font-bold uppercase tracking-[0.2em]">Solutions Certifiées</span>
-            </div>
         </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
