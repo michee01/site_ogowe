@@ -5,16 +5,12 @@
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!--Section Hero-->
     <section class="relative min-h-[630px] md:min-h-[630px] flex items-center bg-gray-900 text-white py-0 px-4 overflow-hidden">
 
         <!-- Slider -->
         <div id="1" class="absolute inset-0 z-0 overflow-hidden">
             <div id="hero-slider" class="w-full h-full relative">
 
-                <!-- =========================
-                    Slide 1
-                ========================== -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-100 slide">
 
                     <img 
@@ -24,27 +20,17 @@
                         alt="Solutions de logistique et distribution"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30"></div>
-                    <!-- Contenu Slide -->
+                   
                     <div class="absolute inset-0 flex items-center z-20">
-                        <div class="container mx-auto max-w-6xl px-4">
+                        <div class="container mx-auto max-w-7xl px-4">
 
-                            <div class="max-w-3xl font-mono zoom-in">
-                                <!--
-                                <span class="inline-block bg-green-600 text-white px-4 py-2 rounded mb-5 font-bold uppercase text-sm">
-                                    Nos solutions
-                                </span>
-                                -->
+                            <div class="max-w-4xl font-mono zoom-in">
+                                
                                 <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
-                                    Logistics
-                                    <span class="text-red-600">&amp; <br> Distribution</span>
+                                    Logistics <span class="text-red-600">&amp; Distribution</span>
                                 </h2>
                                 <br> <br>
-                                <!-- 
-                                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
-                                    Des solutions logistiques fiables et efficaces pour
-                                    assurer vos opérations de Dar es Salaam au Grand Katanga.
-                                </p>
-                                -->
+                                
                                 <div class="flex flex-col sm:flex-row gap-4">
 
                                     <a href="{{route('contact')}}"
@@ -66,9 +52,6 @@
                     </div>
                 </div>
 
-                <!-- =========================
-                    Slide 2
-                ========================== -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img 
                         src="{{ asset('images/assets/base/entretien2.webp') }}"
@@ -77,27 +60,17 @@
                         alt="Services professionnels d'hygiène et entretien"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30"></div>
-                    <!-- Contenu Slide -->
+                   
                     <div class="absolute inset-0 flex items-center z-20">
-                        <div class="container mx-auto max-w-6xl px-4">
+                        <div class="container mx-auto max-w-7xl px-4">
 
-                            <div class="max-w-3xl font-mono zoom-in">
-                                <!--
-                                <span class="inline-block bg-green-600 text-white px-4 py-2 rounded mb-5 font-bold uppercase text-sm">
-                                    Nettoyage professionnelle
-                                </span>
-                                -->
+                            <div class="max-w-4xl font-mono zoom-in">
+                                
                                 <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
-                                    Hygiene
-                                    <span class="text-red-600">&amp; <br> Cleaning</span>
+                                    Hygiene <span class="text-red-600">&amp; Cleaning</span>
                                 </h2>
                                 <br> <br>
-                                <!--
-                                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
-                                    Des environnements propres, sains et agréables grâce
-                                    à des prestations d'entretien adaptées à vos besoins.
-                                </p>
-                                -->
+                               
                                 <div class="flex flex-col sm:flex-row gap-4">
 
                                     <a href="{{route('contact')}}"
@@ -119,9 +92,6 @@
                     </div>
                 </div>
 
-                <!-- =========================
-                    Slide 3
-                ========================== -->
                 <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
                     <img 
                         src="{{ asset('images/assets/base/sante1.webp') }}"
@@ -130,27 +100,17 @@
                         alt="Services de santé et sécurité"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30"></div>
-                    <!-- Contenu Slide -->
+                
                     <div class="absolute inset-0 flex items-center z-20">
-                        <div class="container mx-auto max-w-6xl px-4">
+                        <div class="container mx-auto max-w-7xl px-4">
 
-                            <div class="max-w-3xl font-mono zoom-in">
-                                <!--
-                                <span class="inline-block bg-green-600 text-white px-4 py-2 rounded mb-5 font-bold uppercase text-sm">
-                                    Nos solutions
-                                </span>
-                                --> 
+                            <div class="max-w-4xl font-mono zoom-in">
+                               
                                 <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
-                                    Health
-                                    <span class="text-red-600">&amp; <br> Safety</span>
+                                    Health <span class="text-red-600">&amp; Safety</span>
                                 </h2>
                                 <br> <br>
-                                <!--
-                                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
-                                    Des solutions professionnelles pour préserver la santé,
-                                    la sécurité et le bien-être dans vos environnements de travail.
-                                </p>
-                                -->
+                                
                                 <div class="flex flex-col sm:flex-row gap-4">
 
                                     <a href="{{route('contact')}}"
@@ -176,7 +136,6 @@
             </div>
         </div>
 
-        <!-- Animation du contenu -->
         <style>
             @keyframes zoomInFade {
                 0% {
@@ -293,7 +252,6 @@
     </script>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Presentation de l'entreprise-->
     <section class="py-10">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
             <div>
@@ -325,9 +283,9 @@
                     Ogowe
                 </h2>
                 <p class="text-md text-black leading-relaxed mb-6 text-justify  scroll-animate">  
-                    Ogowe is an integrated services company that supports its clients in the comprehensive management of transit operations between Dar es Salaam, 
-                    Haut-Katanga, and Lualaba. We also provide dry food and agricultural supplies to mining sites, as well as sanitation and environmental solutions, 
-                    including professional cleaning and pest control services.
+                    Ogowe is an integrated services company that provides its clients a complete management of transit operations between Dar es Salaam, 
+                    Haut-Katanga, and Lualaba. We supply essential dry food products to mining sites, fuel and implement sanitary and environmental 
+                    solutions including professional cleaning and pest control to ensure efficiency and sustainability for our clients.
                 </p>
 
                 <script>
@@ -349,9 +307,9 @@
 
                 <div class="bg-black text-white p-8 rounded-br-3xl shadow-2xl">
                     <h3 class="text-red-600 font-bold uppercase tracking-widest mb-4">Our Mission</h3>
-                    <p class="text-md italic font-light text-justify scroll-animate">
-                        To ensure the smooth and efficient operations of our partners, protect their teams and infrastructure through reliable sanitation and 
-                        environmental solutions, while upholding the excellence and reliability of their brand image.
+                    <p class="text-md italic font-semibold text-justify scroll-animate">
+                        To ensure the smooth and efficient operations of our partners, protect their teams and infrastructure through reliable sanitation 
+                        and environmental solutions, while upholding the excellence and reliability of their brand image.
                     </p>
                 </div>
             </div>
@@ -449,11 +407,9 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
     
-    <!--Nos Points cles-->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             
-            <!-- Titre -->
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-4">
                 <div class="max-w-2xl">
                     <h3 class="text-4xl md:text-5xl font-black text-black uppercase mt-2">
@@ -465,10 +421,8 @@
                 </p>
             </div>
 
-            <!-- Cartes -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- Carte 1 -->
                 <div class="bg-white p-6 px-8 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
                     <div class="text-5xl mb-4">🚚</div>
                     <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Logistics & distribution</h4>
@@ -496,7 +450,6 @@
                     </a>
                 </div>
 
-                <!-- Carte 2 -->
                 <div class="bg-white p-6 px-8 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
                     <div class="text-5xl mb-4">🧹</div>
                     <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">Hygiene & cleaning</h4>
@@ -509,15 +462,13 @@
                     </a>
                 </div>
 
-                <!-- Carte 3 -->
                 <div class="bg-white p-6 px-8 rounded-lg border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center scroll-animate flex flex-col">
                     <div class="text-5xl mb-4">🛡️</div>
                     <h4 class="text-xl font-bold mb-4 uppercase leading-tight text-black">health & safety</h4>
                     <p class="text-gray-800 text-md leading-relaxed mb-6 text-justify hyphens-auto">
-                        Through our pest control solutions-including insect control, fumigation, and rodent control-as well as health inspections and 
-                        long-term prevention measures, we protect your teams and infrastructure from health risks.
+                        Thanks to our pest control solutions (insect control, fumigation,rodent control ), to monitoring, 
+                        and sustainable prevention, we protect your teams and spaces from health risks.
                     </p>
-                    <!-- Bouton -->
                     <a href="{{route('services')}}#sante-securite"
                         class="mt-auto text-green-600 font-bold hover:underline">
                         Learn More →
@@ -526,7 +477,6 @@
 
             </div>
 
-            <!-- CTA global -->
             <div class="mt-16 text-center">
                 <a href="{{route('contact')}}" class="rounded-xl inline-block border-2 border-black px-6 py-4 font-black uppercase text-md text-white bg-red-600 tracking-widest hover:bg-black hover:text-white transition-all">
                     Request a Custom Quote
@@ -536,7 +486,6 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!-- Engagement -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             
@@ -552,11 +501,10 @@
 
         </div>
     </section>
-    <!-- Ajoute Font Awesome -->
+
     <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
     <!-------------------------------------------------------------------------------------------------------->
     
-    <!--Pourquoi nous choisir-->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             
@@ -573,24 +521,21 @@
 
         </div>
     </section>
-    <!-- Ajoute Font Awesome -->
+
     <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Ils nous font confiance-->
     <section class="py-16 bg-white overflow-hidden">
         <div class="container mx-auto px-4">
-            <!-- Carrousel logos -->
+            
             <div class="bg-gray-50 rounded-3xl p-5 md:p-16">
                 <h4 class="text-center text-red-600 text-2xl font-black uppercase tracking-[0.2em] mb-12">
                     They Trust Us
                 </h4>
 
-                <!-- Marquee container -->
                 <div class="overflow-hidden relative">
                     <div class="flex w-max animate-marquee">
                         
-                        <!-- Première série -->
                         <div class="flex shrink-0 gap-16">
                             <img src="{{ asset('images/logo/logo-bank.png') }}" alt="Logo CRDB Bank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">                            
                             <img src="{{ asset('images/logo/logo-ecobank.png') }}" alt="Logo Ecobank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
@@ -606,7 +551,6 @@
                             <img src="{{ asset('images/logo/logo-smt.webp') }}" alt="Logo SMT" loading="lazy" class="pr-12 h-20 w-auto shrink-0 object-contain">
                         </div>
 
-                        <!-- Deuxième série identique -->
                         <div class="flex shrink-0 gap-16">
                             <img src="{{ asset('images/logo/logo-bank.png') }}" alt="Logo CRDB Bank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">                            
                             <img src="{{ asset('images/logo/logo-ecobank.png') }}" alt="Logo Ecobank" loading="lazy" class="h-20 w-auto shrink-0 object-contain">
@@ -649,18 +593,14 @@
     </style>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!-- Call to action -->
     <section class="relative mb-20 overflow-hidden bg-black py-20">
 
-        <!-- Décoration -->
         <div class="absolute -right-32 -top-32 h-64 w-64 rounded-full bg-red-600 opacity-20 blur-3xl"></div>
 
         <div class="container relative z-10 mx-auto px-6">
 
-            <!-- Contenu principal -->
             <div class="flex flex-col items-center justify-between gap-10 md:flex-row">
 
-                <!-- Texte -->
                 <div class="w-full text-center md:max-w-2xl md:text-left">
                     <h4 class="text-3xl font-black uppercase tracking-tighter text-white md:text-4xl">
                         Join the Katanga
@@ -669,18 +609,15 @@
                     </h4>
                 </div>
 
-                <!-- Boutons -->
                 <div class="flex w-full flex-col items-center justify-center gap-4 sm:flex-row md:w-auto">
 
-                    <!-- Bouton Devis -->
                     <a href="{{route('contact')}}"
                     class="flex w-full items-center justify-center rounded-md border-2 border-gray-100 bg-green-600 px-8 py-4 text-center text-lg font-black uppercase tracking-widest text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-green-700 sm:w-auto">
                         Get a Free Quote
                     </a>
 
-                    <!-- Bouton WhatsApp -->
                     <a href="https://wa.me/243977976226"
-                    class="flex w-full items-center justify-center gap-2 rounded-md border-2 border-white px-8 py-4 text-center text-lg font-black uppercase tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black sm:w-auto">
+                        class="flex w-full items-center justify-center gap-2 rounded-md border-2 border-white px-8 py-4 text-center text-lg font-black uppercase tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black sm:w-auto">
                         <span class="text-xl">💬</span>
                         Contact
                     </a>
@@ -692,7 +629,6 @@
         </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
-    
     
     <style> 
         .page1 {

@@ -16,7 +16,6 @@
             <div class="absolute inset-0 bg-gradient-to-r from-black via-black/5 to-black/2"></div>
         </div>
 
-        <!-- Contenu -->
         <div class="relative z-10 container mx-auto px-6 py-16 md:py-20">
 
             <div class="max-w-4xl">
@@ -30,11 +29,6 @@
                     Nos services
                 </h1>
                 <br>
-                <!-- Description 
-                <p class="mt-5 text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl">
-                    Une expertise technique multidisciplinaire pour répondre à vos exigences résidentiels, 
-                    commerciaux et industriels.
-                </p>-->
             </div>
 
         </div>
@@ -45,7 +39,6 @@
 
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Distribution et solutions alimentaires intégrées-->
     <div id="distribution" class="w-full  h-14 "> </div>
     <section class="py-4">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
@@ -123,7 +116,7 @@
                     <div id="slider" class="flex w-full h-full transition-transform duration-700 ease-in-out">   
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="{{ asset('images/assets/logistique_distribution/transit.webp') }}" alt="Lutte Antiparasitaire" loading="lazy" class="object-cover w-full h-full">
+                            <img src="{{ asset('images/assets/logistique_distribution/transit.webp') }}" alt="Transit Dar es Saalam" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg tracking-tight font-medium">Transit Dar es Saalam</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
@@ -131,14 +124,15 @@
                         </div>     
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="{{ asset('images/assets/logistique_distribution/general2.webp') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
+                            <img src="{{ asset('images/assets/logistique_distribution/logistique.webp') }}" alt="Feri / COD" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg font-medium tracking-tight">Feri / COD</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
                             </div>
                         </div> 
+                        
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="{{ asset('images/assets/logistique_distribution/distribution.webp') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
+                            <img src="{{ asset('images/assets/logistique_distribution/distribution.webp') }}" alt="Distribution" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg font-medium tracking-tight">Distribution</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
@@ -206,7 +200,6 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Hygiene et entretien-->
     <div id="hygiene-entretien" class="w-full h-14"> </div>
     <section class="py-4">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
@@ -373,7 +366,6 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Sante et securite-->
     <div id="sante-securite" class="w-full h-14 "> </div>
     <section class="py-4">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
@@ -541,7 +533,6 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Appel a l'action-->
     <section class="mx-auto px-6 mb-15">        
             <div class="pt-10 px-20 mt-15 flex flex-col md:flex-row items-center justify-between bg-gray-200 p-8 rounded-2xl">
                 <div class="flex items-center gap-4 mb-6 md:mb-0">

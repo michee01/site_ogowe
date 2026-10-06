@@ -4,29 +4,7 @@
 
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!--
-        <style>
-            .whatsapp-float {
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                background-color: #25d366;
-                color: white;
-                border-radius: 50px;
-                text-align: center;
-                font-size: 30px;
-                box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-                z-index: 100;
-                display: flex;
-                align-items: center;
-                padding: 10px 20px;
-                text-decoration: none;
-                font-family: Arial, sans-serif;
-                font-weight: bold;
-            }
-        </style>
-    -->
-
+    
     <header class="relative bg-gray-950 text-white overflow-hidden">
 
         <div class="absolute inset-0">
@@ -172,12 +150,12 @@
             </div>
         </div>
     </section>
-    <!--
-    <a href="https://wa.me/243977976226" class="whatsapp-float group" target="_blank">
-        <span class="text-xl mr-2">💬</span> 
-        <span class="text-xs uppercase tracking-tighter">Pest Emergency</span>
-    </a>
-    -->
     
+    <style> 
+        .page3 {
+            border-bottom: 4px solid black;
+            padding-bottom: 2px;
+            }
+    </style>    
 @endsection
 

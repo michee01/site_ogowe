@@ -26,16 +26,10 @@
                     <span class="w-12 h-1 bg-red-600"></span>
                     <span class="w-6 h-1 bg-white"></span>
                 </div>
-                <!-- Titre -->
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight leading-tight">
                     Our services
                 </h1>
                 <br>
-                <!-- Description 
-                <p class="mt-5 text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl">
-                    Une expertise technique multidisciplinaire pour répondre à vos exigences résidentiels, 
-                    commerciaux et industriels.
-                </p>-->
             </div>
 
         </div>
@@ -46,7 +40,6 @@
 
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!-- Logistics & Distribution -->
     <div id="distribution" class="w-full h-14 "> </div>
     <section class="py-4">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
@@ -86,11 +79,11 @@
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
                             <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
-                            <span class="text-md">Dar es Salaam Transit – Transportation</span>
+                            <span class="text-md">Transit Dar es salaam: All port formalities and transportation</span>
                         </li>
                         <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
                             <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
-                            <span class="text-md">FERI / COD</span>
+                            <span class="text-md">⁠Application of Ogefrem FERI/ Certificate of Destination (COD)</span>
                         </li>
                         <li class="flex items-center space-x-3 bg-gray-100 p-3 rounded">
                             <span class="text-red-600 group-hover:scale-110 transition-transform">✦</span>
@@ -133,7 +126,7 @@
                         </div>     
 
                         <div class="w-full h-full flex-shrink-0 relative">
-                            <img src="{{ asset('images/assets/logistique_distribution/general2.webp') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
+                            <img src="{{ asset('images/assets/logistique_distribution/logistique.webp') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
                                 <p class="font-black text-lg font-medium tracking-tight">Feri / COD</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
@@ -208,7 +201,6 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!--Hygiene et entretien-->
     <div id="hygiene-entretien" class="w-full border-gray-100 h-14"> </div>
     <section class="py-4">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
@@ -375,7 +367,6 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <!-- Pest Control & Prevention -->
     <div id="sante-securite" class="w-full h-14 "> </div>
     <section class="py-4">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
@@ -543,8 +534,6 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-
-    <!--Appel a l'action-->
     <section class="mx-auto px-6 mb-5">        
         <div class="pt-10 mt-5 flex flex-col md:flex-row items-center justify-between bg-gray-200 p-8 rounded-2xl">
             <div class="flex items-center gap-4 mb-6 md:mb-0">
@@ -568,5 +557,11 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
+    <style> 
+        .page2 {
+            border-bottom: 4px solid black;
+            padding-bottom: 2px;
+            }
+    </style>
     
 @endsection
