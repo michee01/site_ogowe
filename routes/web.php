@@ -4,6 +4,16 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\File;
 use App\Http\Controllers\ContactController;
+use App\Models\Visit;
+use App\Http\Controllers\AnalyticsController;
+
+Route::get('/analytics', [AnalyticsController::class, 'index'])
+    ->name('analytics.index');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/analytic', [AnalyticsController::class, 'index'])
+        ->name('analytics.index');
+});
 
 Route::get('/', function () {
 
@@ -61,3 +71,13 @@ Route::get('/en', function () {
     return redirect()->back();
 
 })->name('en');
+
+
+Route::get('/test-statistiques', function () {
+    return [
+        'pages_vues' => Visit::count(),
+
+        'sessions' => Visit::distinct('session_id')
+            ->count('session_id'),
+    ];
+});
