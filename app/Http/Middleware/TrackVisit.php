@@ -18,7 +18,16 @@ class TrackVisit
             return $next($request);
         }
 
-        if ($request->is('analytics') || $request->is('analytics/*')) {
+        if ( $request->is('/analytics') || $request->is('/analytics/*') || $request->is('/dashboard') || $request->is('/dashboard/*') || $request->is('/en') || $request->is('/en/*') ) {
+            return $next($request);
+        } 
+        if ( $request->is('analytics') || $request->is('analytics/*') || $request->is('dashboard') || $request->is('dashboard/*') || $request->is('en') || $request->is('en/*') ) {
+            return $next($request);
+        }        
+        if ( $request->is('/profile') || $request->is('/profile/*') || $request->is('/login') || $request->is('/login/*') ) {
+            return $next($request);
+        }       
+        if ( $request->is('profile') || $request->is('profile/*') || $request->is('login') || $request->is('login/*') ) {
             return $next($request);
         }
 

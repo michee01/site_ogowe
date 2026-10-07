@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\File;
@@ -7,11 +8,11 @@ use App\Http\Controllers\ContactController;
 use App\Models\Visit;
 use App\Http\Controllers\AnalyticsController;
 
-Route::get('/analytics', [AnalyticsController::class, 'index'])
-    ->name('analytics.index');
+
+
 
 Route::middleware('auth')->group(function () {
-    Route::get('/analytic', [AnalyticsController::class, 'index'])
+    Route::get('/analytics', [AnalyticsController::class, 'index'])
         ->name('analytics.index');
 });
 
@@ -72,7 +73,7 @@ Route::get('/en', function () {
 
 })->name('en');
 
-
+/*
 Route::get('/test-statistiques', function () {
     return [
         'pages_vues' => Visit::count(),
@@ -81,3 +82,17 @@ Route::get('/test-statistiques', function () {
             ->count('session_id'),
     ];
 });
+*/
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';

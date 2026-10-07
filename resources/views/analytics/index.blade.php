@@ -28,6 +28,14 @@
 <body class="bg-surface text-on-surface font-body">
     <div class="max-w-7xl mx-auto p-4 sm:p-6 space-y-6">
 
+          @include('layouts.navigation')
+
+        <navbar>
+            <div class="flex ">
+
+            </div>    
+        </navbar>
+
         <!-- En-tête + Filtre de Période -->
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
             <div>
@@ -132,14 +140,16 @@
                     <h2 class="text-lg font-bold text-gray-900 mb-6">Pages les plus consultées</h2>
                     <div class="divide-y divide-gray-100">
                         @forelse($pagesPopulaires as $page)
-                            <div class="py-3 flex items-center justify-between hover:bg-gray-50/50 px-2 rounded-lg transition">
-                                <span class="font-mono text-sm font-medium text-gray-800 truncate max-w-xs sm:max-w-md">
-                                    {{ $page->page === '/' ? '/' : '/' . $page->page }}
-                                </span>
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-700">
-                                    {{ number_format($page->total) }} vues
-                                </span>
-                            </div>
+                            @if($page->page != 'analytic' and $page->page != 'analytics' and $page->page != 'en' and $page->page != 'dashboard' and $page->page != 'profile' and $page->page != 'login')
+                                <div class="py-3 flex items-center justify-between hover:bg-gray-50/50 px-2 rounded-lg transition">
+                                    <span class="font-mono text-sm font-medium text-gray-800 truncate max-w-xs sm:max-w-md">
+                                        {{ $page->page === '/' ? '/' : '/' . $page->page }}
+                                    </span>
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-700">
+                                        {{ number_format($page->total) }} vues
+                                    </span>
+                                </div>
+                            @endif
                         @empty
                             <p class="text-gray-400 text-sm py-4 text-center">Aucune donnée disponible.</p>
                         @endforelse

@@ -24,19 +24,15 @@ class AnalyticsController extends Controller
             case 'today':
                 $query->whereDate('created_at', Carbon::today());
                 break;
-
             case '7':
                 $query->where('created_at', '>=', now()->subDays(6)->startOfDay());
                 break;
-
             case '30':
                 $query->where('created_at', '>=', now()->subDays(29)->startOfDay());
                 break;
-
             case 'all':
                 // Aucune restriction de date
                 break;
-
             default:
                 $periode = '7';
                 $query->where('created_at', '>=', now()->subDays(6)->startOfDay());
@@ -49,6 +45,14 @@ class AnalyticsController extends Controller
         |--------------------------------------------------------------------------
         */
 
+        $pagesExclues = [
+            'analytics',
+            'en',
+            'dashboard',
+            'profile',
+            'login',
+        ];
+
         $visiteursUniques = (clone $query)
             ->whereNotNull('visitor_id')
             ->distinct('visitor_id')
@@ -59,12 +63,27 @@ class AnalyticsController extends Controller
             ->whereNotNull('session_id')
             ->distinct('session_id')
             ->count('session_id');
+            
 
-        $pagesVues = (clone $query)->count();
+        $pagesVues = (clone $query)
+            ->whereNotIn('page', $pagesExclues)
+            ->where('page', 'not like', 'analytics/%')
+            ->where('page', 'not like', 'en/%')
+            ->where('page', 'not like', 'dashboard/%')
+            ->where('page', 'not like', 'profile/%')
+            ->where('page', 'not like', 'login/%')
+            ->count();
 
         $pagesVuesSuivies = (clone $query)
             ->whereNotNull('visitor_id')
+            ->whereNotIn('page', $pagesExclues)
+            ->where('page', 'not like', 'analytics/%')
+            ->where('page', 'not like', 'en/%')
+            ->where('page', 'not like', 'dashboard/%')
+            ->where('page', 'not like', 'profile/%')
+            ->where('page', 'not like', 'login/%')
             ->count();
+
 
         $pagesParSession = $sessions > 0
             ? round($pagesVuesSuivies / $sessions, 2)
