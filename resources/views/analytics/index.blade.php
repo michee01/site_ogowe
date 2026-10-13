@@ -44,7 +44,7 @@
             </div>
 
             <!-- Formulaire -->
-            <form method="GET" action="{{ route('analytics.index') }}" class="flex items-center">
+            <form method="GET" action="{{ route('dashboard') }}" class="flex items-center">
                 <div class="relative w-full sm:w-auto">
                     <select
                         name="periode"
