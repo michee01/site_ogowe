@@ -310,24 +310,30 @@
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/base/equipe1.webp') }}" alt="Service de Logistique et distribution" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!-- 
                                 <p class="font-black text-lg uppercase tracking-tight font-semibold">Logistique et distribution</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div>
 
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/base/equipe2.webp') }}" alt="Service de Hygiène et Entrerien" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!-- 
                                 <p class="font-black text-lg uppercase tracking-tight font-semibold">Hygiène et Entrerien</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div> 
 
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/base/sante1.webp') }}" alt="Service de Santé et securité" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!--  
                                 <p class="font-black text-lg uppercase tracking-tight font-semibold">Santé et securité</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div>     
 
@@ -466,7 +472,7 @@
 
             <div class="mt-16 text-center">
                 <a href="{{route('contact')}}" class="rounded-xl inline-block border-2 border-black px-6 py-4 font-black uppercase text-md text-white bg-red-600 tracking-widest hover:bg-black hover:text-white transition-all">
-                    Demander un devis personnalisé
+                    Contactez-nous 
                 </a>
             </div>
         </div>
@@ -600,7 +606,7 @@
 
                     <a href="{{route('contact')}}"
                     class="flex w-full items-center justify-center rounded-md border-2 border-gray-100 bg-green-600 px-8 py-4 text-center text-lg font-black uppercase tracking-widest text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-green-700 sm:w-auto">
-                        Obtenir un devis gratuit
+                        Obtenir un devis
                     </a>
 
                     <a href="https://wa.me/243977976226"

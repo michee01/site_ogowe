@@ -118,24 +118,30 @@
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/logistique_distribution/transit.webp') }}" alt="Transit Dar es Saalam" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!--
                                 <p class="font-black text-lg tracking-tight font-medium">Transit Dar es Saalam</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div>     
 
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/logistique_distribution/logistique.webp') }}" alt="Feri / COD" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!--
                                 <p class="font-black text-lg font-medium tracking-tight">Feri / COD</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div> 
                         
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/logistique_distribution/distribution.webp') }}" alt="Distribution" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!--
                                 <p class="font-black text-lg font-medium tracking-tight">Distribution</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div> 
 
@@ -213,24 +219,30 @@
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/hygiene_entretien/equipe2.webp') }}" alt="Équipe Ogowe" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!--
                                 <p class="font-black font-medium text-lg tracking-tight">Industriel et Commercial</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div>
 
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/hygiene_entretien/entretien2.webp') }}" alt="Lutte Antiparasitaire" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!--
                                 <p class="font-black font-medium text-lg tracking-tight">Entretien des Bureaux</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div>     
 
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/hygiene_entretien/entretien3.webp') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!--
                                 <p class="font-black font-medium text-lg tracking-tight">Entretien des Residences</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div> 
 
@@ -451,24 +463,30 @@
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/sante_securite/sante1.webp') }}" alt="Équipe Ogowe" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!--
                                 <p class="font-black font-medium text-lg tracking-tight">Lutte antiparasitaire</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div>
 
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/sante_securite/sante2.webp') }}" alt="Lutte Antiparasitaire" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!--
                                 <p class="font-black font-medium text-lg tracking-tight">Dératisation</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div>     
 
                         <div class="w-full h-full flex-shrink-0 relative">
                             <img src="{{ asset('images/assets/sante_securite/sante3.webp') }}" alt="Nettoyage Industriel" loading="lazy" class="object-cover w-full h-full">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-6 text-white">
+                                <!--
                                 <p class="font-black font-medium text-lg tracking-tight">Désinsectisation et Fumigation</p>
                                 <p class="text-xs text-gray-300 font-medium mt-1">.</p>
+                                -->
                             </div>
                         </div> 
 
