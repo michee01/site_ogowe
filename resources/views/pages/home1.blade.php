@@ -608,9 +608,9 @@
 
                 <div class="w-full text-center md:max-w-2xl md:text-left">
                     <h4 class="text-3xl font-black uppercase tracking-tighter text-white md:text-4xl">
-                        Join the Katanga
+                        Join the
                         <span class="text-red-600">companies</span>
-                        that trust our expertise
+                        in Katanga that trust us
                     </h4>
                 </div>
 
