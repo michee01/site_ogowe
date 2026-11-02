@@ -26,7 +26,7 @@
 
                             <div class="max-w-4xl font-mono zoom-in">
                                 
-                                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+                                <h2 class="text-2xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
                                     Logistics <span class="text-red-600">&amp; Distribution</span>
                                 </h2>
                                 <br> <br>
@@ -64,9 +64,9 @@
                     <div class="absolute inset-0 flex items-center z-20">
                         <div class="container mx-auto max-w-7xl px-4">
 
-                            <div class="max-w-4xl font-mono zoom-in">
+                            <div class="max-w-3xl font-mono zoom-in">
                                 
-                                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+                                <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
                                     Hygiene <span class="text-red-600">&amp; Cleaning</span>
                                 </h2>
                                 <br> <br>
@@ -104,9 +104,9 @@
                     <div class="absolute inset-0 flex items-center z-20">
                         <div class="container mx-auto max-w-7xl px-4">
 
-                            <div class="max-w-4xl font-mono zoom-in">
+                            <div class="max-w-3xl font-mono zoom-in">
                                
-                                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+                                <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
                                     Health <span class="text-red-600">&amp; Safety</span>
                                 </h2>
                                 <br> <br>

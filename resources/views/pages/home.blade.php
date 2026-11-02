@@ -24,8 +24,8 @@
                     <div class="absolute inset-0 flex items-center z-20">
                         <div class="container mx-auto max-w-7xl px-3">
 
-                            <div class="max-w-4xl font-mono zoom-in"> 
-                                <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+                            <div class="max-w-4xl font-mono  zoom-in"> 
+                                <h2 class="text-2xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
                                     Logistique <span class="text-red-600">&amp; Distribution</span>
                                 </h2>
                                 <br> <br>
